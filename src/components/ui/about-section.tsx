@@ -1,4 +1,4 @@
-old code :import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, MapPin, Calendar, Award, Users, Code, Mail, Phone, Linkedin, Github } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo-new.jpg';
@@ -197,4 +197,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection; update and give 
+export default AboutSection; 
