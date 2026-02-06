@@ -129,28 +129,17 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="py-8 border-t border-primary/20">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-1 text-sm text-secondary-foreground/70">
-              <span>&copy; {currentYear} K.Ameer Malik Bahad. Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>and lots of ☕</span>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-secondary-foreground/70">
-                Built with React, TypeScript & Tailwind CSS
-              </span>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={scrollToTop}
-                className="border-primary/30 hover:bg-primary hover:text-primary-foreground"
-              >
-                <ChevronUp className="h-4 w-4 mr-1" />
-                Top
-              </Button>
-            </div>
+        <div className="py-6 border-t border-primary/20">
+          <div className="flex justify-end">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={scrollToTop}
+              className="border-primary/30 hover:bg-primary hover:text-primary-foreground"
+            >
+              <ChevronUp className="h-4 w-4 mr-1" />
+              Back to Top
+            </Button>
           </div>
         </div>
       </div>

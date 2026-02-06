@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, MapPin, Calendar, Award, Users, Code, Mail, Phone, Linkedin, Github } from 'lucide-react';
+import profilePhoto from '@/assets/profile-photo-new.jpg';
 
 const AboutSection = () => {
   const stats = [
@@ -18,6 +19,22 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 tech-section relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Profile Photo */}
+        <div className="flex justify-center mb-10">
+          <div className="relative">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
+              <img 
+                src={profilePhoto} 
+                alt="K. Ameer Malik Bahad" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+              <Code className="h-4 w-4 text-primary-foreground" />
+            </div>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">

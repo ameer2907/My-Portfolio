@@ -48,7 +48,24 @@ const ProjectsSection = () => {
       demo: 'https://github.com/ameer2907'
     },
     {
-      title: 'Food Ordering System - Restaurant App',
+      title: 'AI-Driven Predictive Waste Management System for Urban Sustainability Using IoT',
+      description: 'An intelligent IoT-based waste management system that leverages AI and machine learning for predictive analytics, automated waste classification, and optimized collection routes to promote urban sustainability and environmental conservation.',
+      icon: Navigation,
+      status: 'Active',
+      featured: true,
+      technologies: ['IoT', 'Python', 'Machine Learning', 'Arduino', 'Real-time Analytics', 'Sensor Integration'],
+      features: [
+        'IoT-enabled smart waste bin monitoring',
+        'AI-powered waste classification',
+        'Predictive fill-level analytics',
+        'Optimized collection route planning',
+        'Real-time dashboard & alerts'
+      ],
+      github: 'https://github.com/ameer2907',
+      demo: 'https://github.com/ameer2907'
+    },
+    {
+      title: 'The South Plate - Online Food Restaurant Platform',
       description: 'A complete restaurant management and food ordering application with user-friendly interface, order tracking, menu management, and payment integration. Deployed and live for real-world usage.',
       icon: Utensils,
       status: 'Deployed',
