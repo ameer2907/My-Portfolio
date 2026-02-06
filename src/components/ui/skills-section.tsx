@@ -21,8 +21,8 @@ const SkillsSection = () => {
       skills: [
         { name: 'Python' },
         { name: 'Java' },
-        { name: 'C/C++' },
         { name: 'SQL' },
+        { name: 'JavaScript' },
       ],
     },
     {
@@ -52,23 +52,25 @@ const SkillsSection = () => {
       icon: Monitor,
       color: 'text-orange-500',
       skills: [
-        { name: 'Power BI' },
         { name: 'Git/GitHub' },
         { name: 'Azure' },
-        { name: 'Business Intelligence' },
+        { name: 'IoT' },
+        { name: 'React.js' },
       ],
     },
   ];
 
   const certifications = [
+    'Introduction to Generative AI Studio – Google Cloud',
+    'IBM Data Science Professional Certificate',
+    'IBM Data Analytics Certificate',
+    'Data Analytics Job Simulation – Deloitte',
+    'Machine Learning Certification – ThingBator',
     'Python for Data Analysis',
-    'Java Fundamentals',
-    'NPTEL Elite – User-Centric Computing for HCI',
-    'Microsoft Azure - Technical Skills',
-    'Cybersecurity – NASSCOM Certified',
-    'Hackathon Event – Certified Participation',
-    'IoT Workshop – College Event',
-    'Power BI Online Workshop – Certified',
+    'Power BI Online Workshop',
+    'Microsoft Azure Technical Skills (Fundamentals)',
+    'Cybersecurity Certification – NASSCOM',
+    'NPTEL Elite – User-Centric Computing (HCI)',
   ];
 
   return (
