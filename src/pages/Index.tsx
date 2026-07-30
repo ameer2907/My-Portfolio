@@ -1,32 +1,63 @@
-import Navigation from '@/components/ui/navigation';
-import HeroSection from '@/components/ui/hero-section';
-import AboutSection from '@/components/ui/about-section';
-import SkillsSection from '@/components/ui/skills-section';
-import ProjectsSection from '@/components/ui/projects-section';
-import ExperienceSection from '@/components/ui/experience-section';
-import ContactSection from '@/components/ui/contact-section';
-import Footer from '@/components/ui/footer';
+import { lazy, Suspense } from "react";
+import Navigation, { ScrollProgress } from "@/components/portfolio/navigation";
+import Hero from "@/components/portfolio/hero";
+import About from "@/components/portfolio/about";
+import Footer, { BackToTop } from "@/components/portfolio/footer";
+
+const Skills = lazy(() => import("@/components/portfolio/skills"));
+const Experience = lazy(() => import("@/components/portfolio/experience"));
+const Projects = lazy(() => import("@/components/portfolio/projects"));
+const FeaturedProject = lazy(() =>
+  import("@/components/portfolio/projects").then((m) => ({ default: m.FeaturedProject })),
+);
+const Timeline = lazy(() => import("@/components/portfolio/journey").then((m) => ({ default: m.Timeline })));
+const Certifications = lazy(() =>
+  import("@/components/portfolio/journey").then((m) => ({ default: m.Certifications })),
+);
+const Stats = lazy(() => import("@/components/portfolio/journey").then((m) => ({ default: m.Stats })));
+const Highlights = lazy(() => import("@/components/portfolio/journey").then((m) => ({ default: m.Highlights })));
+const Services = lazy(() => import("@/components/portfolio/services").then((m) => ({ default: m.Services })));
+const WhyHireMe = lazy(() => import("@/components/portfolio/services").then((m) => ({ default: m.WhyHireMe })));
+const Testimonials = lazy(() =>
+  import("@/components/portfolio/services").then((m) => ({ default: m.Testimonials })),
+);
+const ResumeSection = lazy(() => import("@/components/portfolio/resume-section"));
+const Contact = lazy(() => import("@/components/portfolio/contact"));
+
+const Fallback = () => <div className="h-40" aria-hidden="true" />;
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative overflow-x-hidden">
-      {/* Animated background elements */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute top-1/3 right-20 w-96 h-96 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 left-1/4 w-80 h-80 bg-gradient-to-r from-accent/10 to-secondary/10 rounded-full blur-3xl animate-float" style={{animationDelay: '4s'}}></div>
-      </div>
-      
-      <div className="relative z-10">
-        <Navigation />
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <ContactSection />
-        <Footer />
-      </div>
+    <div className="relative min-h-screen overflow-x-hidden">
+      <a
+        href="#main"
+        className="focus-ring sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground"
+      >
+        Skip to content
+      </a>
+      <ScrollProgress />
+      <Navigation />
+      <main id="main">
+        <Hero />
+        <About />
+        <Suspense fallback={<Fallback />}>
+          <Stats />
+          <Skills />
+          <Experience />
+          <FeaturedProject />
+          <Projects />
+          <Timeline />
+          <Certifications />
+          <Highlights />
+          <Services />
+          <WhyHireMe />
+          <Testimonials />
+          <ResumeSection />
+          <Contact />
+        </Suspense>
+      </main>
+      <Footer />
+      <BackToTop />
     </div>
   );
 };
