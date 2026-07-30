@@ -14,8 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
-        'space': ['Space Grotesk', 'sans-serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Sora', 'Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+        inter: ['Inter', 'sans-serif'],
+        space: ['Sora', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -68,8 +71,8 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
-        'gradient-hero': 'var(--gradient-hero)', 
-        'gradient-card': 'var(--gradient-card)',
+        'gradient-accent': 'var(--gradient-accent)',
+        'gradient-surface': 'var(--gradient-surface)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
@@ -77,6 +80,7 @@ export default {
         'large': 'var(--shadow-large)',
         'glow': 'var(--shadow-glow)',
       },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
