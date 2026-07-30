@@ -1,22 +1,23 @@
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { forwardRef, useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-export function Reveal({
-  children,
-  delay = 0,
-  className,
-  as = "div",
-}: {
+type RevealProps = {
   children: ReactNode;
   delay?: number;
   className?: string;
   as?: "div" | "li" | "section";
-}) {
+};
+
+export const Reveal = forwardRef<HTMLElement, RevealProps>(function Reveal(
+  { children, delay = 0, className, as = "div" },
+  ref,
+) {
   const reduce = useReducedMotion();
-  const MotionTag = motion[as];
+  const MotionTag = motion[as] as typeof motion.div;
   return (
     <MotionTag
+      ref={ref as React.Ref<HTMLDivElement>}
       className={className}
       initial={reduce ? false : { opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -26,7 +27,8 @@ export function Reveal({
       {children}
     </MotionTag>
   );
-}
+});
+
 
 export function SectionHeading({
   eyebrow,
