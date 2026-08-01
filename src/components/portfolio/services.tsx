@@ -115,24 +115,18 @@ export function Testimonials() {
           eyebrow="Testimonials"
           title={
             <>
-              References <span className="gradient-text">coming soon</span>
+              Testimonials <span className="gradient-text">Coming Soon</span>
             </>
           }
-          description="Recommendations from mentors and colleagues will be published here as they are shared."
         />
-        <div className="grid gap-5 md:grid-cols-3">
-          {[1, 2, 3].map((n) => (
-            <Reveal key={n} delay={n * 0.05}>
-              <article className="glass-card flex h-full flex-col justify-between border-dashed p-6">
-                <Quote className="h-6 w-6 text-primary/50" aria-hidden="true" />
-                <p className="mt-4 text-sm italic text-muted-foreground">
-                  Space reserved for a recommendation from an internship mentor or project collaborator.
-                </p>
-                <p className="mt-6 font-mono text-xs text-muted-foreground">Awaiting testimonial</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal>
+          <article className="glass-card mx-auto flex max-w-2xl flex-col items-center border-dashed p-8 text-center">
+            <Quote className="h-6 w-6 text-primary/50" aria-hidden="true" />
+            <p className="mt-4 text-sm text-muted-foreground">
+              Recommendations from mentors and internship supervisors will be added here once available.
+            </p>
+          </article>
+        </Reveal>
       </div>
     </section>
   );
