@@ -13,7 +13,7 @@ export const profile = {
   phone: "+91 9087223978",
   github: "https://github.com/ameer2907",
   linkedin: "https://www.linkedin.com/in/ameer-malik-bahad07",
-  website: "https://ameermalik.me",
+  website: "https://ameer-malik.netlify.app/",
   languages: ["Tamil (Native)", "English (Professional)"],
 };
 
@@ -127,9 +127,9 @@ export const experiences: Experience[] = [
   },
   {
     company: "Thirumoolar IT Solutions",
-    role: "Machine Learning Intern",
-    period: "Mar 2025 – Apr 2025",
-    meta: "Internship",
+    role: "Python Full Stack Developer Intern",
+    period: "March 2025 – April 2025",
+    meta: "Internship · 1 Month",
     points: [
       "Applied supervised and unsupervised ML algorithms — classification, regression and clustering — to real-world problem statements.",
       "Performed data preprocessing, feature engineering and exploratory data analysis to build predictive models using Python and Pandas.",
@@ -187,7 +187,7 @@ export const projects: Project[] = [
     name: "CodeLens Engine – AI Code Explainer",
     category: "AI / Web App",
     status: "Live",
-    duration: "2025",
+    duration: "2026",
     description:
       "An AI-powered tool that analyses and explains code snippets across 5+ programming languages in real time.",
     problem:
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     name: "South Plate – Food Delivery Web App",
     category: "Web Application",
     status: "Live",
-    duration: "2025",
+    duration: "2026",
     description:
       "A responsive food delivery experience with restaurant browsing, menu display and complete cart management.",
     problem: "Small restaurants need a lightweight ordering front end that works well on mobile without a heavy platform.",
@@ -234,7 +234,7 @@ export const projects: Project[] = [
     name: "Global Nexus Bank",
     category: "Web Application",
     status: "Live",
-    duration: "2025",
+    duration: "2026",
     description:
       "A digital banking application covering account management, fund transfers and transaction history.",
     problem: "Banking interfaces need strict validation and clear transaction feedback to be trustworthy.",
@@ -257,7 +257,7 @@ export const projects: Project[] = [
     name: "Weather Shield India",
     category: "API Integration",
     status: "Live",
-    duration: "2025",
+    duration: "2026",
     description:
       "A weather forecasting app consuming REST APIs for real-time temperature, humidity and wind conditions.",
     problem: "Users need fast, location-aware weather data without noisy interfaces or slow page loads.",
@@ -280,7 +280,7 @@ export const projects: Project[] = [
     name: "BusFolio",
     category: "Business Website",
     status: "Live",
-    duration: "2025",
+    duration: "2026",
     description: "A responsive portfolio and business website with a modern interface and smooth navigation.",
     problem: "Small businesses need a fast, credible web presence that reads well on every screen size.",
     solution:
@@ -348,12 +348,12 @@ export const timeline = [
   },
   {
     year: "Mar 2025",
-    title: "Machine Learning Intern",
+    title: "Python Full Stack Developer Intern",
     org: "Thirumoolar IT Solutions",
     type: "Internship",
   },
   {
-    year: "2025",
+    year: "2026",
     title: "Shipped 5 web applications",
     org: "CodeLens Engine, South Plate, Global Nexus Bank, Weather Shield India, BusFolio",
     type: "Projects",
@@ -414,6 +414,6 @@ export const highlights = [
   { label: "Internships completed", value: "Full Stack (Evolve Solutions) & ML (Thirumoolar)" },
   { label: "Technologies learned", value: "18+ across frontend, backend, data and tooling" },
   { label: "Certifications earned", value: "10 including IBM, Microsoft Azure and Google Cloud" },
-  { label: "Portfolio", value: "ameermalik.me — live and continuously updated" },
+  { label: "Portfolio", value: "ameer-malik.netlify.app — live and continuously updated" },
   { label: "Learning mindset", value: "Consistently building beyond coursework requirements" },
 ];

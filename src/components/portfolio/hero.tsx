@@ -6,7 +6,13 @@ import { profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import profilePhoto from "@/assets/profile-photo-new.jpg";
 
-const roles = ["Software Engineer", "Python Full Stack Developer", "Django & Flask Developer", "React.js Frontend Developer"];
+const roles = [
+  "Software Engineer",
+  "Python Full Stack Developer",
+  "AI & Data Science Engineer",
+  "Backend Developer (Python | Django | Flask)",
+  "Open to Entry-Level Software Engineer Roles",
+];
 
 function Typing() {
   const reduce = useReducedMotion();

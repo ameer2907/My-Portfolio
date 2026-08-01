@@ -33,7 +33,7 @@ export default function Contact() {
     { Icon: MapPin, label: "Location", value: profile.location },
     { Icon: Github, label: "GitHub", value: "github.com/ameer2907", href: profile.github },
     { Icon: Linkedin, label: "LinkedIn", value: "ameer-malik-bahad07", href: profile.linkedin },
-    { Icon: Globe, label: "Portfolio", value: "ameermalik.me", href: profile.website },
+    { Icon: Globe, label: "Portfolio", value: "ameer-malik.netlify.app", href: profile.website },
   ];
 
   return (
