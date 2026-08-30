@@ -188,6 +188,7 @@ export const projects: Project[] = [
     tags: ["Python", "AI", "Machine Learning"],
     github: "https://github.com/ameer2907",
     featured: true,
+    image: imgWaste,
   },
   {
     slug: "codelens-engine",
@@ -212,6 +213,7 @@ export const projects: Project[] = [
     tags: ["Python", "AI", "Web Development", "Frontend"],
     demo: "https://codelens-engine.netlify.app",
     github: "https://github.com/ameer2907",
+    image: imgCodelens,
   },
   {
     slug: "south-plate",
@@ -235,6 +237,7 @@ export const projects: Project[] = [
     tags: ["Web Development", "Frontend"],
     demo: "https://the-south-plate-food-delivery-app.netlify.app",
     github: "https://github.com/ameer2907",
+    image: imgSouthPlate,
   },
   {
     slug: "global-nexus-bank",
@@ -258,6 +261,7 @@ export const projects: Project[] = [
     tags: ["Web Development", "Frontend"],
     demo: "https://global-nexus-bank.netlify.app",
     github: "https://github.com/ameer2907",
+    image: imgBank,
   },
   {
     slug: "weather-shield",
@@ -281,6 +285,7 @@ export const projects: Project[] = [
     tags: ["Web Development", "Frontend", "Backend"],
     demo: "https://weathershield-india.netlify.app",
     github: "https://github.com/ameer2907",
+    image: imgWeather,
   },
   {
     slug: "busfolio",
@@ -303,6 +308,7 @@ export const projects: Project[] = [
     tags: ["Web Development", "Frontend"],
     demo: "https://busfolio.netlify.app",
     github: "https://github.com/ameer2907",
+    image: imgBusfolio,
   },
 ];
 
