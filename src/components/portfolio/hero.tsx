@@ -53,13 +53,6 @@ function Typing() {
   );
 }
 
-const floatingTech = [
-  { label: "Py", top: "12%", left: "6%", delay: "0s" },
-  { label: "Dj", top: "68%", left: "3%", delay: "1.2s" },
-  { label: "JS", top: "18%", left: "90%", delay: "0.6s" },
-  { label: "{ }", top: "74%", left: "88%", delay: "1.8s" },
-  { label: "SQL", top: "44%", left: "94%", delay: "2.4s" },
-];
 
 export default function Hero() {
   const socials = [
@@ -73,17 +66,6 @@ export default function Hero() {
     <section id="hero" className="relative overflow-hidden pb-20 pt-32 sm:pt-40">
       <div aria-hidden="true" className="absolute inset-0 -z-10 aurora-bg" />
       <div aria-hidden="true" className="absolute inset-0 -z-10 grid-overlay" />
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 hidden md:block">
-        {floatingTech.map((t) => (
-          <span
-            key={t.label}
-            className="glass-panel absolute grid h-12 w-12 animate-float-soft place-items-center rounded-2xl font-mono text-xs text-muted-foreground"
-            style={{ top: t.top, left: t.left, animationDelay: t.delay }}
-          >
-            {t.label}
-          </span>
-        ))}
-      </div>
 
       <div className="section-shell grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
         <div>

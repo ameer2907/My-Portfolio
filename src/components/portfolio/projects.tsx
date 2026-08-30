@@ -18,10 +18,15 @@ function ProjectCard({ p }: { p: Project }) {
       className="glass-card group flex h-full flex-col overflow-hidden hover:-translate-y-1"
     >
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-accent/10">
-        <div className="absolute inset-0 grid place-items-center bg-gradient-accent opacity-10 transition-opacity duration-300 group-hover:opacity-20" />
-        <div className="absolute inset-0 grid place-items-center">
-          <span className="font-display text-4xl font-bold text-foreground/15">{p.name.slice(0, 2).toUpperCase()}</span>
-        </div>
+        <img
+          src={p.image}
+          alt={`${p.name} preview`}
+          width={1280}
+          height={720}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
         <span className="absolute left-3 top-3 rounded-full bg-background/80 px-2.5 py-1 font-mono text-[11px] text-muted-foreground backdrop-blur">
           {p.category}
         </span>
@@ -105,12 +110,14 @@ export function FeaturedProject() {
         <Reveal>
           <article className="glass-card grid gap-8 p-6 sm:p-9 lg:grid-cols-[1.1fr_1fr]">
             <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-accent/10">
-              <div className="absolute inset-0 bg-gradient-accent opacity-10" />
-              <div className="grid aspect-[4/3] place-items-center">
-                <span className="px-6 text-center font-display text-2xl font-bold text-foreground/25">
-                  {p.name}
-                </span>
-              </div>
+              <img
+                src={p.image}
+                alt={`${p.name} preview`}
+                width={1280}
+                height={720}
+                loading="lazy"
+                className="aspect-[4/3] h-full w-full object-cover"
+              />
             </div>
 
             <div>

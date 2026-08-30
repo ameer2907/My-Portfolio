@@ -361,7 +361,7 @@ export const timeline = [
   },
   {
     year: "Mar 2025",
-    title: "Python Full Stack Developer Intern",
+    title: "Machine Learning Intern (Virtual)",
     org: "Thirumoolar IT Solutions",
     type: "Internship",
   },
