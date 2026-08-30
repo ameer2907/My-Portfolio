@@ -1,4 +1,10 @@
 // Single source of truth: K. Ameer Malik Bahad — resume content.
+import imgWaste from "@/assets/project-waste-management.jpg";
+import imgCodelens from "@/assets/project-codelens.jpg";
+import imgSouthPlate from "@/assets/project-south-plate.jpg";
+import imgBank from "@/assets/project-bank.jpg";
+import imgWeather from "@/assets/project-weather.jpg";
+import imgBusfolio from "@/assets/project-busfolio.jpg";
 
 export const profile = {
   name: "K. Ameer Malik Bahad",
@@ -7,7 +13,7 @@ export const profile = {
   tagline:
     "Final-year CSE (Data Science & AI) student building production-minded full-stack applications with Python, Django, Flask and React.",
   summary:
-    "Final-year B.Tech Computer Science Engineering (Data Science & Artificial Intelligence) student with hands-on internship and project experience in full-stack application development. Strong foundation in software engineering principles, problem-solving, and database-driven application development. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role to contribute and grow in a collaborative environment.",
+    "B.Tech Computer Science Engineering (Data Science & Artificial Intelligence) graduate with hands-on internship and project experience in Python full-stack development. Proficient in Python, Django, Flask, REST APIs, SQL, and MongoDB, with practical experience building backend services, database-driven features, and responsive web applications using JavaScript, HTML5, and CSS3. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role to apply strong software development and problem-solving skills.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
@@ -127,12 +133,12 @@ export const experiences: Experience[] = [
   },
   {
     company: "Thirumoolar IT Solutions",
-    role: "Python Full Stack Developer Intern",
+    role: "Machine Learning Intern",
     period: "March 2025 – April 2025",
-    meta: "Internship · 1 Month",
+    meta: "Virtual / Remote · 1 Month",
     points: [
-      "Applied supervised and unsupervised ML algorithms — classification, regression and clustering — to real-world problem statements.",
-      "Performed data preprocessing, feature engineering and exploratory data analysis to build predictive models using Python and Pandas.",
+      "Built predictive models in Python and Pandas using supervised and unsupervised algorithms including classification, regression, and clustering.",
+      "Performed data preprocessing, feature engineering and exploratory data analysis on real-world datasets to build predictive models.",
     ],
     tech: ["Python", "Pandas", "NumPy", "Machine Learning", "EDA"],
   },
@@ -154,6 +160,7 @@ export type Project = {
   demo?: string;
   github: string;
   featured?: boolean;
+  image: string;
 };
 
 export const projects: Project[] = [
