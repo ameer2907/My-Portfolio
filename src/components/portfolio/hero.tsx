@@ -173,7 +173,7 @@ export default function Hero() {
             <div className="flex items-center justify-between px-2 py-3">
               <div>
                 <p className="font-display text-sm font-semibold">B.Tech CSE — Data Science & AI</p>
-                <p className="text-xs text-muted-foreground">Class of 2026 · CGPA 7.58</p>
+                <p className="text-xs text-muted-foreground">Graduated 2026 · CGPA 7.58</p>
               </div>
               <span className="rounded-full bg-primary/10 px-3 py-1 font-mono text-[11px] text-primary">Available</span>
             </div>
