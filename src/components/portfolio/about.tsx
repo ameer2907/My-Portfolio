@@ -6,7 +6,7 @@ const pillars = [
   {
     icon: GraduationCap,
     title: "Who I am",
-    body: "A final-year Computer Science Engineering student specialising in Data Science and Artificial Intelligence, with internship experience delivering full-stack web applications in a professional team.",
+    body: "A Computer Science Engineering graduate specialising in Data Science and Artificial Intelligence, with internship experience delivering full-stack web applications in a professional team.",
   },
   {
     icon: Target,

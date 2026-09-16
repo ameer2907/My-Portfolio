@@ -11,7 +11,7 @@ export const profile = {
   shortName: "Ameer Malik",
   role: "Software Engineer / Python Full Stack Developer",
   tagline:
-    "Final-year CSE (Data Science & AI) student building production-minded full-stack applications with Python, Django, Flask and React.",
+    "Aspiring Python Full Stack Developer with a completed B.Tech in CSE (Data Science & AI), building production-minded full-stack applications with Python, Django, Flask and React.",
   summary:
     "B.Tech Computer Science Engineering (Data Science & Artificial Intelligence) graduate with hands-on internship and project experience in Python full-stack development. Proficient in Python, Django, Flask, REST APIs, SQL, and MongoDB, with practical experience building backend services, database-driven features, and responsive web applications using JavaScript, HTML5, and CSS3. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role to apply strong software development and problem-solving skills.",
   location: "Chennai, Tamil Nadu, India",
@@ -385,8 +385,8 @@ export const timeline = [
   },
   {
     year: "2026",
-    title: "Graduating — seeking Software Developer roles",
-    org: "Python / Full Stack Development",
+    title: "Graduated B.Tech CSE (Data Science & AI)",
+    org: "Python / Full Stack Development · Seeking Software Developer roles",
     type: "Milestone",
   },
 ];
