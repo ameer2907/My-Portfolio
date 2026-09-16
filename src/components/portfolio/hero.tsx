@@ -9,8 +9,8 @@ import profPhotoAsset from "@/assets/prof-photo.png.asset.json";
 const profilePhoto = profPhotoAsset.url;
 
 const roles = [
-  "Software Engineer",
-  "Python Full Stack Developer",
+  "Aspiring Software Engineer",
+  "Aspiring Python Full Stack Developer",
   "AI & Data Science Engineer",
   "Backend Developer (Python | Django | Flask)",
   "Open to Entry-Level Software Engineer Roles",
