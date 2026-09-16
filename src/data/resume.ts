@@ -350,6 +350,8 @@ export const certifications = [
   "Machine Learning – ThingBator",
   "Power BI Workshop",
   "NPTEL Elite – User-Centric Computing (HCI)",
+  "Merit Certificate – Dr. M.G.R Educational and Research Institute",
+  "Course Completion Certificates – B.Tech CSE (Data Science & AI)",
 ];
 
 export const timeline = [
