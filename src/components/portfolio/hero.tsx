@@ -4,7 +4,9 @@ import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from
 import { Button } from "@/components/ui/button";
 import { profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
-import profilePhoto from "@/assets/profile-photo-new.jpg";
+import profPhotoAsset from "@/assets/prof-photo.png.asset.json";
+
+const profilePhoto = profPhotoAsset.url;
 
 const roles = [
   "Software Engineer",
