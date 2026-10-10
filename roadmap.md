@@ -1,0 +1,3 @@
+- [ ] Match all portfolio facts to the latest uploaded resume; remove unsupported claims.
+- [ ] Replace every resume download and preview with the latest PDF.
+- [ ] Verify portfolio content, links, and rendering.
