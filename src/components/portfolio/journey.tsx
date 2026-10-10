@@ -20,7 +20,7 @@ export function Timeline() {
               From coursework to <span className="gradient-text">shipped software</span>
             </>
           }
-          description="Education, internships and project milestones in order."
+          description="Education and professional experience."
         />
 
         <ol className="relative mx-auto max-w-3xl border-l border-border pl-6 sm:pl-10">
@@ -101,7 +101,7 @@ export function Highlights() {
           eyebrow="Highlights"
           title={
             <>
-              What the last two years <span className="gradient-text">produced</span>
+              Education, experience & <span className="gradient-text">technical expertise</span>
             </>
           }
         />

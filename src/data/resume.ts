@@ -9,81 +9,78 @@ import imgBusfolio from "@/assets/project-busfolio.jpg";
 export const profile = {
   name: "K. Ameer Malik Bahad",
   shortName: "Ameer Malik",
-  role: "Software Engineer / Python Full Stack Developer",
-  tagline:
-    "Aspiring Python Full Stack Developer with a completed B.Tech in CSE (Data Science & AI), building production-minded full-stack applications with Python, Django, Flask and React.",
-  summary:
-    "B.Tech Computer Science Engineering (Data Science & Artificial Intelligence) graduate with hands-on internship and project experience in Python full-stack development. Proficient in Python, Django, Flask, REST APIs, SQL, and MongoDB, with practical experience building backend services, database-driven features, and responsive web applications using JavaScript, HTML5, and CSS3. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role to apply strong software development and problem-solving skills.",
+  role: "Full Stack Developer — Python & AI",
+  tagline: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development.",
+  summary: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development. Proficient in Python, Django, Flask, REST APIs, SQL, and MongoDB, with experience building responsive web applications using JavaScript, HTML5, and CSS3. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
   github: "https://github.com/ameer2907",
-  linkedin: "https://www.linkedin.com/in/ameer-malik-bahad07",
+  linkedin: "https://linkedin.com/in/ameer-malik-bahad07",
   website: "https://ameer-malik.netlify.app/",
-  languages: ["Tamil (Native)", "English (Professional)"],
 };
 
 export type SkillCategory = {
   title: string;
   icon: string;
-  skills: { name: string; level: number }[];
+  skills: { name: string }[];
 };
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Programming Languages",
+    title: "Programming",
     icon: "Code2",
     skills: [
-      { name: "Python", level: 90 },
-      { name: "Java", level: 75 },
-      { name: "JavaScript", level: 85 },
-      { name: "SQL", level: 80 },
+      { name: "Python" },
+      { name: "Java" },
+      { name: "JavaScript" },
+      { name: "SQL" },
     ],
   },
   {
     title: "Frontend",
     icon: "Layout",
     skills: [
-      { name: "HTML5", level: 92 },
-      { name: "CSS3", level: 88 },
-      { name: "React.js", level: 78 },
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "React.js" },
     ],
   },
   {
-    title: "Backend & Frameworks",
+    title: "Backend",
     icon: "Server",
     skills: [
-      { name: "Django", level: 85 },
-      { name: "Flask", level: 82 },
-      { name: "REST APIs", level: 84 },
+      { name: "Django" },
+      { name: "Flask" },
+      { name: "REST APIs" },
     ],
   },
   {
     title: "Databases",
     icon: "Database",
     skills: [
-      { name: "MySQL", level: 82 },
-      { name: "MongoDB", level: 78 },
-      { name: "DBMS", level: 80 },
+      { name: "MySQL" },
+      { name: "MongoDB" },
+      { name: "DBMS" },
     ],
   },
   {
-    title: "AI & Data Science",
+    title: "Data & AI",
     icon: "Brain",
     skills: [
-      { name: "Machine Learning", level: 80 },
-      { name: "Pandas", level: 85 },
-      { name: "NumPy", level: 82 },
+      { name: "Machine Learning" },
+      { name: "Pandas" },
+      { name: "NumPy" },
     ],
   },
   {
-    title: "Developer Tools & Deployment",
+    title: "Tools",
     icon: "Wrench",
     skills: [
-      { name: "Git", level: 85 },
-      { name: "GitHub", level: 85 },
-      { name: "VS Code", level: 90 },
-      { name: "Netlify", level: 80 },
+      { name: "Git" },
+      { name: "GitHub" },
+      { name: "VS Code" },
+      { name: "Netlify" },
     ],
   },
 ];
@@ -120,28 +117,41 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    company: "Evolve Solutions, Chennai",
-    role: "Python Full Stack Developer Intern",
-    period: "Jan 2026 – Apr 2026",
-    meta: "Onsite · 3 Months",
-    points: [
-      "Developed full-stack web applications using HTML5, CSS3, JavaScript, Python, Django and Flask, delivering responsive frontend interfaces alongside backend functionality.",
-      "Implemented REST APIs, database operations and application features with MongoDB and SQL, covering data handling, authentication and dynamic content management.",
-      "Built and tested web application modules, integrated APIs and deployed projects, gaining practical experience across the full-stack development lifecycle.",
+    "company": "Evolve Solution",
+    "role": "Python Full Stack Developer Intern",
+    "period": "Jan 2026 – Apr 2026",
+    "meta": "Chennai, India · Onsite — 3 Months",
+    "points": [
+      "Built full-stack web applications using Python, Django, Flask, JavaScript, HTML5, and CSS3.",
+      "Implemented REST APIs and database operations using SQL and MongoDB, including authentication.",
+      "Tested and deployed web application modules with hands-on API integration experience."
     ],
-    tech: ["Python", "Django", "Flask", "REST APIs", "MongoDB", "SQL", "JavaScript", "HTML5", "CSS3"],
+    "tech": [
+      "Python",
+      "Django",
+      "Flask",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "SQL",
+      "MongoDB"
+    ]
   },
   {
-    company: "Thirumoolar IT Solutions",
-    role: "Machine Learning Intern",
-    period: "March 2025 – April 2025",
-    meta: "Virtual / Remote · 1 Month",
-    points: [
-      "Built predictive models in Python and Pandas using supervised and unsupervised algorithms including classification, regression, and clustering.",
-      "Performed data preprocessing, feature engineering and exploratory data analysis on real-world datasets to build predictive models.",
+    "company": "Thirumoolar IT Solutions",
+    "role": "Machine Learning Intern",
+    "period": "Mar 2025 – Apr 2025",
+    "meta": "Chennai, India",
+    "points": [
+      "Built predictive models in Python and Pandas using supervised and unsupervised algorithms, including classification and regression."
     ],
-    tech: ["Python", "Pandas", "NumPy", "Machine Learning", "EDA"],
-  },
+    "tech": [
+      "Python",
+      "Pandas",
+      "Machine Learning"
+    ]
+  }
 ];
 
 export type Project = {
@@ -151,10 +161,10 @@ export type Project = {
   status: "Completed" | "Live";
   duration: string;
   description: string;
-  problem: string;
-  solution: string;
+  problem?: string;
+  solution?: string;
   features: string[];
-  challenges: string;
+  challenges?: string;
   tech: string[];
   tags: string[];
   demo?: string;
@@ -164,162 +174,163 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    slug: "waste-management",
-    name: "AI-Driven Predictive Waste Management System (IoT)",
-    category: "AI / IoT",
-    status: "Completed",
-    duration: "Final Year Project",
-    description:
-      "An AI and IoT prototype that predicts waste accumulation and optimises collection routes using live Arduino sensor data.",
-    problem:
-      "Municipal waste collection follows fixed routes, so bins overflow while collection vehicles travel to containers that are still empty.",
-    solution:
-      "Arduino sensors stream fill-level data to machine learning models (Random Forest and LSTM) that forecast bin saturation and re-order collection routes in real time.",
-    features: [
-      "Random Forest and LSTM prediction models",
-      "Real-time Arduino sensor data pipeline",
-      "Route optimisation for collection efficiency",
-      "Reduced manual monitoring effort",
-    ],
-    challenges:
-      "Handling noisy sensor readings and aligning time-series data from hardware with model training requirements.",
-    tech: ["Python", "Machine Learning", "Arduino", "IoT", "Pandas", "NumPy"],
-    tags: ["Python", "AI", "Machine Learning"],
-    github: "https://github.com/ameer2907",
-    featured: true,
-    image: imgWaste,
-  },
-  {
-    slug: "codelens-engine",
-    name: "CodeLens Engine – AI Code Explainer",
-    category: "AI / Web App",
-    status: "Live",
-    duration: "2026",
-    description:
-      "An AI code tutor that turns any algorithm into an animated, step-by-step walkthrough with flowcharts, variable tracking and Big-O analysis across 8 languages.",
-    problem:
-      "Reading an unfamiliar algorithm line by line tells you what it does, but not how the values move or why the complexity is what it is.",
-    solution:
-      "A playground where a pasted snippet is parsed and explained by Gemini AI: execution is replayed line by line with highlighted variables, an auto-generated control-flow diagram and a plain-language commentary.",
-    features: [
-      "Step-by-step execution with animated line highlights and live variable tracking",
-      "Auto-generated logic flowcharts of the program's control flow",
-      "Instant Big-O time and space analysis with optimisation suggestions",
-      "Conversational AI explanations plus a ready-made examples library across 8 languages",
-    ],
-    challenges:
-      "Keeping the AI explanation, the animated execution trace and the generated flowchart consistent with each other for very different language syntaxes.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Gemini AI"],
-    tags: ["AI", "Web Development", "Frontend"],
-    demo: "https://codelens-engine.netlify.app",
-    github: "https://github.com/ameer2907",
-    image: imgCodelens,
-  },
-  {
-    slug: "south-plate",
-    name: "The South Plate – Food Delivery Web App",
-    category: "Web Application",
-    status: "Live",
-    duration: "2026",
-    description:
-      "A premium South Indian food ordering site for Chennai, with eight menu categories, live discount pricing and a full cart and checkout flow.",
-    problem:
-      "A single-outlet restaurant needs its own ordering front end that feels premium on mobile, without paying commission to a delivery marketplace.",
-    solution:
-      "A React single-page app with category browsing, a searchable menu, ratings and bestseller badges, discounted price display and persistent cart state through to checkout.",
-    features: [
-      "Eight menu categories (dosas, idlis, vadas, rice, curries, snacks, beverages, desserts)",
-      "Dish cards with ratings, review counts, bestseller tags and discounted pricing",
-      "Cart with live item count and multi-step checkout",
-      "Customer login, promo codes and delivery/support information",
-    ],
-    challenges:
-      "Keeping cart and pricing state in sync across categories and checkout steps while keeping the whole experience fast on mobile.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Supabase"],
-    tags: ["Web Development", "Frontend"],
-    demo: "https://the-south-plate-food-delivery-app.netlify.app",
-    github: "https://github.com/ameer2907",
-    image: imgSouthPlate,
-  },
-  {
-    slug: "global-nexus-bank",
-    name: "Nexus Global Bank – International Currency Exchange",
-    category: "Full Stack",
-    status: "Live",
-    duration: "2026",
-    description:
-      "A secure international currency exchange platform with account sign-up, live rate tracking, transaction history and PDF invoices.",
-    problem:
-      "Sending money across currencies means juggling rate lookups, records of what was converted, and proof of each transaction.",
-    solution:
-      "An authenticated banking dashboard where users register, convert between currencies at tracked rates, and receive a stored transaction record with a generated PDF invoice and email confirmation.",
-    features: [
-      "Email and password authentication secured with JWT",
-      "Real-time currency rate tracking and conversion",
-      "Transaction history stored in MongoDB",
-      "Dynamic PDF invoices and email confirmations",
-    ],
-    challenges:
-      "Designing the authentication and transaction layer so balances, rates and invoices stay consistent for every exchange.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "JWT"],
-    tags: ["Web Development", "Backend", "Frontend"],
-    demo: "https://global-nexus-bank.netlify.app",
-    github: "https://github.com/ameer2907",
-    image: imgBank,
-  },
-  {
-    slug: "weather-shield",
-    name: "WeatherShield India – Disaster Intelligence Platform",
-    category: "AI / API Integration",
-    status: "Live",
-    duration: "2026",
-    description:
-      "A weather and disaster-risk dashboard for Indian cities that combines live conditions with AI-generated safety insights.",
-    problem:
-      "Weather apps show temperature, but they do not tell a city whether the current conditions point to flood, heat or earthquake risk.",
-    solution:
-      "City search across major Indian cities pulls live weather and hazard data, renders it in custom SVG charts, and passes it to Claude AI for a written risk analysis alongside official emergency references.",
-    features: [
-      "City search with quick access to 12+ major Indian cities",
-      "Real-time weather dashboards built on custom SVG charts",
-      "AI-generated risk analysis and disaster insight from Claude",
-      "Sources from IMD India, USGS earthquake hazards, OpenWeatherMap and CWC, with official alert links",
-    ],
-    challenges:
-      "Merging several independent data sources into one coherent risk view while handling missing or rate-limited API responses gracefully.",
-    tech: ["React", "JavaScript", "Vite", "SVG", "Claude AI"],
-    tags: ["AI", "Web Development", "Frontend"],
-    demo: "https://weathershield-india.netlify.app",
-    github: "https://github.com/ameer2907",
-    image: imgWeather,
-  },
-  {
-    slug: "busfolio",
-    name: "BusFolio – Interactive Journey Portfolio",
-    category: "Frontend / Interactive",
-    status: "Live",
-    duration: "2026",
-    description:
-      "An interactive portfolio built as a bus journey, where each stop reveals a different part of my career, skills and achievements.",
-    problem:
-      "A scroll-down portfolio gives every section the same weight and gives a recruiter no reason to keep reading.",
-    solution:
-      "A guided, stop-by-stop narrative built from reusable React components, with bus-simulation screens, keyboard and click navigation and a dark/light theme.",
-    features: [
-      "Guided journey navigation with a start screen and sequential stops",
-      "Interactive bus-simulation screens for each portfolio section",
-      "Reusable typed React components for every stop",
-      "Dark and light mode with a fully responsive Tailwind layout",
-    ],
-    challenges:
-      "Keeping the journey state and animated transitions smooth while remaining usable by keyboard and on small screens.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    tags: ["Web Development", "Frontend"],
-    demo: "https://busfolio.netlify.app",
-    github: "https://github.com/ameer2907",
-    image: imgBusfolio,
-  },
+{
+  "slug": "waste-management",
+  "name": "AI Predictive Waste Management System",
+  "category": "AI / IoT",
+  "status": "Completed",
+  "duration": "",
+  "description": "Built an IoT prototype using Arduino sensors and ML models (Random Forest, LSTM) for waste-level prediction.",
+  "features": [
+    "Used model predictions to optimize waste collection routes and reduce manual monitoring."
+  ],
+  "tech": [
+    "Python",
+    "Machine Learning",
+    "IoT",
+    "Scikit-learn",
+    "LSTM"
+  ],
+  "tags": [
+    "Python",
+    "AI",
+    "Machine Learning"
+  ],
+  "github": "https://github.com/ameer2907",
+  "featured": true
+,
+  image: imgWaste
+},
+{
+  "slug": "codelens-engine",
+  "name": "CodeLens Engine – AI Code Explainer",
+  "category": "AI / Web App",
+  "status": "Live",
+  "duration": "",
+  "description": "Built an AI-powered tool that analyzes and explains code snippets across 5+ programming languages.",
+  "features": [
+    "Integrated Gemini AI APIs with a responsive interface for real-time code explanations."
+  ],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Supabase",
+    "Gemini AI"
+  ],
+  "tags": [
+    "AI",
+    "Web Development",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://codelens-engine.netlify.app/"
+,
+  image: imgCodelens
+},
+{
+  "slug": "south-plate",
+  "name": "South Plate – Food Delivery Web App",
+  "category": "Web Application",
+  "status": "Live",
+  "duration": "",
+  "description": "Built a responsive food delivery app with restaurant browsing, dynamic menus, search, and cart management.",
+  "features": [
+    "Used React Router and Tailwind CSS for a smooth single-page navigation experience."
+  ],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Supabase"
+  ],
+  "tags": [
+    "Web Development",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://the-south-plate-food-delivery-app.netlify.app/"
+,
+  image: imgSouthPlate
+},
+{
+  "slug": "global-nexus-bank",
+  "name": "Global Nexus Bank",
+  "category": "Full Stack",
+  "status": "Live",
+  "duration": "",
+  "description": "Developed an international currency exchange platform with real-time rate tracking and transaction history.",
+  "features": [
+    "Built with JWT authentication, MongoDB storage, dynamic PDF invoices, and email confirmations."
+  ],
+  "tech": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT"
+  ],
+  "tags": [
+    "Web Development",
+    "Backend",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://global-nexus-bank.netlify.app/"
+,
+  image: imgBank
+},
+{
+  "slug": "weather-shield",
+  "name": "Weather Shield India",
+  "category": "AI / API Integration",
+  "status": "Live",
+  "duration": "",
+  "description": "Built a weather and disaster intelligence platform with risk analysis and AI-generated insights.",
+  "features": [
+    "Implemented city search, weather dashboards, custom SVG charts, and Claude AI integration."
+  ],
+  "tech": [
+    "React",
+    "JavaScript",
+    "Vite",
+    "SVG",
+    "Claude AI"
+  ],
+  "tags": [
+    "AI",
+    "Web Development",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://weathershield-india.netlify.app/"
+,
+  image: imgWeather
+},
+{
+  "slug": "busfolio",
+  "name": "BusFolio",
+  "category": "Frontend / Interactive",
+  "status": "Live",
+  "duration": "",
+  "description": "Built a responsive portfolio website using React and TypeScript with reusable components.",
+  "features": [
+    "Implemented interactive bus-simulation screens with dark/light mode and Tailwind CSS styling."
+  ],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  "tags": [
+    "Web Development",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://busfolio.netlify.app/"
+,
+  image: imgBusfolio
+}
 ];
 
 export const projectFilters = [
@@ -338,107 +349,65 @@ export const education = [
     institution: "Dr. M.G.R Educational and Research Institute, Chennai",
     period: "2022 – 2026",
     detail: "CGPA: 7.58",
-    coursework: [
-      "Data Structures & Algorithms",
-      "DBMS",
-      "Operating Systems",
-      "Machine Learning",
-      "Web Technologies",
-      "Software Engineering",
-    ],
+    coursework: [] as string[],
   },
 ];
 
 export const certifications = [
-  "IBM Data Science Professional Certificate",
-  "IBM Data Analytics Certificate",
-  "Microsoft Azure Fundamentals",
-  "Google Cloud: Intro to Generative AI Studio",
-  "Deloitte Data Analytics Simulation",
-  "NASSCOM Cybersecurity Fundamentals",
+  "IBM Data Science Professional",
+  "IBM Data Analytics",
   "Python for Data Analysis",
-  "Machine Learning – ThingBator",
+  "Deloitte Data Analytics Simulation",
+  "Microsoft Azure Fundamentals",
+  "NASSCOM Cybersecurity Fundamentals",
+  "Google Cloud Intro to Generative AI Studio",
+  "Machine Learning (ThingBator Track)",
   "Power BI Workshop",
-  "NPTEL Elite – User-Centric Computing (HCI)",
-  "Merit Certificate – Dr. M.G.R Educational and Research Institute",
-  "Course Completion Certificates – B.Tech CSE (Data Science & AI)",
+  "NPTEL Elite User-Centric Computing (HCI)",
 ];
 
 export const timeline = [
-  {
-    year: "2022",
-    title: "Started B.Tech CSE (Data Science & AI)",
-    org: "Dr. M.G.R Educational and Research Institute",
-    type: "Education",
-  },
-  {
-    year: "Mar 2025",
-    title: "Machine Learning Intern (Virtual)",
-    org: "Thirumoolar IT Solutions",
-    type: "Internship",
-  },
-  {
-    year: "2026",
-    title: "Shipped 5 web applications",
-    org: "CodeLens Engine, South Plate, Global Nexus Bank, Weather Shield India, BusFolio",
-    type: "Projects",
-  },
-  {
-    year: "Jan 2026",
-    title: "Python Full Stack Developer Intern",
-    org: "Evolve Solutions, Chennai",
-    type: "Internship",
-  },
-  {
-    year: "2026",
-    title: "Final Year Project — AI-Driven Predictive Waste Management",
-    org: "Python · Machine Learning · IoT",
-    type: "Projects",
-  },
-  {
-    year: "2026",
-    title: "Graduated B.Tech CSE (Data Science & AI)",
-    org: "Python / Full Stack Development · Seeking Software Developer roles",
-    type: "Milestone",
-  },
+  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: "Dr. M.G.R Educational and Research Institute, Chennai · CGPA: 7.58", type: "Education" },
+  { year: "Mar 2025 – Apr 2025", title: "Machine Learning Intern", org: "Thirumoolar IT Solutions · Chennai, India", type: "Internship" },
+  { year: "Jan 2026 – Apr 2026", title: "Python Full Stack Developer Intern", org: "Evolve Solution · Chennai, India · Onsite — 3 Months", type: "Internship" },
 ];
 
 export const stats = [
-  { label: "Projects Completed", value: 6, suffix: "+" },
-  { label: "Technologies", value: 18, suffix: "+" },
-  { label: "Months of Internship", value: 5, suffix: "" },
-  { label: "Certifications", value: 10, suffix: "" },
-  { label: "Live Deployments", value: 5, suffix: "" },
+  { label: "Technical Projects", value: projects.length, suffix: "" },
+  { label: "Technologies", value: skillCategories.reduce((sum, cat) => sum + cat.skills.length, 0), suffix: "" },
+  { label: "Internships", value: experiences.length, suffix: "" },
+  { label: "Certifications", value: certifications.length, suffix: "" },
+  { label: "Project Links", value: projects.filter(p => p.demo).length, suffix: "" },
   { label: "CGPA", value: 7.58, suffix: "", decimals: 2 },
 ];
 
 export const services = [
-  { title: "Python Development", desc: "Clean, maintainable Python for scripts, automation and application logic.", icon: "Code2" },
-  { title: "Django Development", desc: "Database-driven web applications with authentication and admin workflows.", icon: "Layers" },
-  { title: "Flask Development", desc: "Lightweight services and micro-applications built for speed and clarity.", icon: "Feather" },
-  { title: "REST API Development", desc: "Well-structured endpoints with validation, auth and predictable responses.", icon: "Plug" },
-  { title: "Frontend Development", desc: "Accessible, responsive interfaces using HTML5, CSS3, JavaScript and React.", icon: "Layout" },
-  { title: "Responsive Web Design", desc: "Mobile-first layouts that stay consistent from phones to large displays.", icon: "Smartphone" },
-  { title: "Backend Development", desc: "Data models, queries and business logic across MySQL and MongoDB.", icon: "Server" },
-  { title: "Full Stack Development", desc: "End-to-end delivery from schema design to deployed, tested interface.", icon: "Boxes" },
+  { title: "Python Development", desc: "Python full-stack development and predictive models.", icon: "Code2" },
+  { title: "Django Development", desc: "Full-stack web applications using Python and Django.", icon: "Layers" },
+  { title: "Flask Development", desc: "Web application modules built with Python and Flask.", icon: "Feather" },
+  { title: "REST API Development", desc: "REST APIs, authentication and API integration.", icon: "Plug" },
+  { title: "Frontend Development", desc: "Responsive applications using JavaScript, HTML5, CSS3 and React.js.", icon: "Layout" },
+  { title: "Responsive Web Design", desc: "Responsive interfaces using React, TypeScript and Tailwind CSS.", icon: "Smartphone" },
+  { title: "Backend Development", desc: "Database operations using SQL and MongoDB.", icon: "Server" },
+  { title: "Full Stack Development", desc: "Building, testing and deploying web application modules.", icon: "Boxes" },
 ];
 
 export const whyHireMe = [
-  { title: "Strong Fundamentals", desc: "Software engineering principles, DBMS and problem solving applied across every project.", icon: "GraduationCap" },
-  { title: "Problem Solver", desc: "Approaches each build from the problem statement first, then the technology.", icon: "Lightbulb" },
-  { title: "Internship Experience", desc: "Five months across full-stack and machine learning internships in real teams.", icon: "Briefcase" },
-  { title: "Project Experience", desc: "Six shipped projects, five of them deployed and publicly accessible.", icon: "FolderGit2" },
-  { title: "Clean Coding", desc: "Readable structure, consistent naming and reusable components by default.", icon: "Sparkles" },
-  { title: "Fast Learner", desc: "Ten certifications across data science, cloud and cybersecurity alongside coursework.", icon: "Rocket" },
-  { title: "Team Player", desc: "Onsite internship experience collaborating on shared codebases and reviews.", icon: "Users" },
-  { title: "Adaptability", desc: "Comfortable moving between Python backends, JavaScript frontends and ML workflows.", icon: "Shuffle" },
+  { title: "Engineering Graduate", desc: "B.Tech Computer Science Engineering (Data Science & AI), CGPA 7.58.", icon: "GraduationCap" },
+  { title: "Predictive Modelling", desc: "Supervised and unsupervised algorithms, including classification and regression.", icon: "Lightbulb" },
+  { title: "Internship Experience", desc: "Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions.", icon: "Briefcase" },
+  { title: "Project Experience", desc: "Six technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
+  { title: "Reusable Components", desc: "React and TypeScript portfolio development with reusable components.", icon: "Sparkles" },
+  { title: "Technical Certifications", desc: "Ten certifications across data, cloud, security, machine learning and systems.", icon: "Rocket" },
+  { title: "Onsite Experience", desc: "Three-month Python Full Stack Developer internship in Chennai.", icon: "Users" },
+  { title: "Full Stack & AI", desc: "Python, Django, Flask, REST APIs, React.js, Pandas and NumPy.", icon: "Shuffle" },
 ];
 
 export const highlights = [
-  { label: "Projects completed", value: "6 shipped, 5 deployed live" },
-  { label: "Internships completed", value: "Full Stack (Evolve Solutions) & ML (Thirumoolar)" },
-  { label: "Technologies learned", value: "18+ across frontend, backend, data and tooling" },
-  { label: "Certifications earned", value: "10 including IBM, Microsoft Azure and Google Cloud" },
-  { label: "Portfolio", value: "ameer-malik.netlify.app — live and continuously updated" },
-  { label: "Learning mindset", value: "Consistently building beyond coursework requirements" },
+  { label: "Technical projects", value: "AI Predictive Waste Management, CodeLens Engine, South Plate, Global Nexus Bank, Weather Shield India and BusFolio" },
+  { label: "Professional experience", value: "Evolve Solution & Thirumoolar IT Solutions" },
+  { label: "Technical expertise", value: "Programming, frontend, backend, databases, data & AI, and tools" },
+  { label: "Certifications", value: "Data Science & Analytics, Cloud & Security, Machine Learning & Systems" },
+  { label: "Portfolio", value: profile.website },
+  { label: "Career objective", value: "Entry-level Software Developer, Python Developer or Full Stack Developer" },
 ];

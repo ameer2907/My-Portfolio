@@ -16,7 +16,7 @@ export default function Skills() {
               The stack I <span className="gradient-text">build with</span>
             </>
           }
-          description="Languages, frameworks, databases and tooling drawn directly from my coursework, internships and shipped projects."
+          description="Programming, frontend, backend, databases, data & AI, and tools."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,20 +36,6 @@ export default function Skills() {
                       <li key={s.name}>
                         <div className="flex items-center justify-between text-sm">
                           <span>{s.name}</span>
-                          <span className="font-mono text-xs text-muted-foreground">{s.level}%</span>
-                        </div>
-                        <div
-                          className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-secondary"
-                          role="progressbar"
-                          aria-label={`${s.name} proficiency`}
-                          aria-valuenow={s.level}
-                          aria-valuemin={0}
-                          aria-valuemax={100}
-                        >
-                          <div
-                            className="h-full rounded-full bg-gradient-accent transition-[width] duration-700"
-                            style={{ width: `${s.level}%` }}
-                          />
                         </div>
                       </li>
                     ))}

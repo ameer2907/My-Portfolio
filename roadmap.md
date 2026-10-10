@@ -1,0 +1,3 @@
+- [x] Match all portfolio facts to the latest uploaded resume; remove unsupported claims.
+- [x] Replace every resume download and preview with the latest PDF, including the user's follow-up request for all download buttons.
+- [x] Verify portfolio content, links, and rendering. All three download links and the preview reference the new asset; browser checks pass.

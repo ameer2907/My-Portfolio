@@ -51,7 +51,7 @@ export function Services() {
               What I can <span className="gradient-text">build for you</span>
             </>
           }
-          description="Capabilities grounded in my internship work, coursework and deployed projects."
+          description="Capabilities grounded in my technical expertise, internships and projects."
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => {

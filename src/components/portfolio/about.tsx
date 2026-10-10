@@ -6,12 +6,12 @@ const pillars = [
   {
     icon: GraduationCap,
     title: "Who I am",
-    body: "A Computer Science Engineering graduate specialising in Data Science and Artificial Intelligence, with internship experience delivering full-stack web applications in a professional team.",
+    body: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development.",
   },
   {
     icon: Target,
     title: "Career objective",
-    body: "To join an engineering team as a Software Developer, Python Developer or Full Stack Developer where I can contribute to production code and grow through code review and collaboration.",
+    body: "Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role.",
   },
   {
     icon: Cpu,
@@ -20,8 +20,8 @@ const pillars = [
   },
   {
     icon: Puzzle,
-    title: "Problem solving",
-    body: "Every project starts from the problem statement — the data model, the user journey and the constraints — before a single line of framework code is written.",
+    title: "Data & AI",
+    body: "Machine Learning, Pandas and NumPy, with internship experience building predictive models using supervised and unsupervised algorithms, including classification and regression.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function About() {
                     <p className="text-sm text-muted-foreground">{e.detail}</p>
                   </div>
                 </div>
-                <p className="mt-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">Relevant coursework</p>
+                {e.coursework.length > 0 && <p className="mt-5 text-xs uppercase tracking-[0.16em] text-muted-foreground">Relevant coursework</p>}
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {e.coursework.map((c) => (
                     <li key={c}>

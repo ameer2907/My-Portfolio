@@ -14,7 +14,6 @@ const Timeline = lazy(() => import("@/components/portfolio/journey").then((m) =>
 const Certifications = lazy(() =>
   import("@/components/portfolio/journey").then((m) => ({ default: m.Certifications })),
 );
-const Stats = lazy(() => import("@/components/portfolio/journey").then((m) => ({ default: m.Stats })));
 const Highlights = lazy(() => import("@/components/portfolio/journey").then((m) => ({ default: m.Highlights })));
 const Services = lazy(() => import("@/components/portfolio/services").then((m) => ({ default: m.Services })));
 const WhyHireMe = lazy(() => import("@/components/portfolio/services").then((m) => ({ default: m.WhyHireMe })));
@@ -41,7 +40,6 @@ const Index = () => {
         <Hero />
         <About />
         <Suspense fallback={<Fallback />}>
-          <Stats />
           <Skills />
           <Experience />
           <FeaturedProject />

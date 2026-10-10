@@ -13,7 +13,7 @@ export default function Experience() {
               Real teams, <span className="gradient-text">real deployments</span>
             </>
           }
-          description="Five months of onsite and applied internship experience across full-stack development and machine learning."
+          description="Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions."
         />
 
         <div className="space-y-6">

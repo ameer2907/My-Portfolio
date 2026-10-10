@@ -46,7 +46,7 @@ export default function Footer() {
             <span className="font-display text-sm font-semibold">{profile.shortName}</span>
           </a>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            Software Engineer · Python Full Stack Developer based in Chennai, India.
+            {profile.role} · {profile.location}.
           </p>
           <div className="mt-5 flex gap-2">
             {[
