@@ -42,7 +42,7 @@ function ProjectCard({ p }: { p: Project }) {
         </div>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
-        <dl className="mt-4 space-y-2 text-sm">
+        {(p.problem || p.solution) && <dl className="mt-4 space-y-2 text-sm">
           <div>
             <dt className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Problem</dt>
             <dd className="mt-1 text-muted-foreground">{p.problem}</dd>
@@ -51,7 +51,7 @@ function ProjectCard({ p }: { p: Project }) {
             <dt className="text-xs uppercase tracking-[0.14em] text-muted-foreground">Solution</dt>
             <dd className="mt-1 text-muted-foreground">{p.solution}</dd>
           </div>
-        </dl>
+        </dl>}
 
         <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground">
           {p.features.map((f) => (
@@ -62,10 +62,10 @@ function ProjectCard({ p }: { p: Project }) {
           ))}
         </ul>
 
-        <p className="mt-4 text-sm text-muted-foreground">
+        {p.challenges && <p className="mt-4 text-sm text-muted-foreground">
           <span className="text-xs uppercase tracking-[0.14em]">Challenges · </span>
           {p.challenges}
-        </p>
+        </p>}
 
         <ul className="mt-5 flex flex-wrap gap-2">
           {p.tech.map((t) => (
@@ -122,15 +122,15 @@ export function FeaturedProject() {
 
             <div>
               <span className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-3 py-1 font-mono text-xs text-accent">
-                <Star className="h-3.5 w-3.5" aria-hidden="true" /> {p.duration} · {p.status}
+                <Star className="h-3.5 w-3.5" aria-hidden="true" /> {p.status}
               </span>
               <h3 className="mt-4 text-2xl font-semibold">{p.name}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
-              <h4 className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">Architecture</h4>
+              <h4 className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">Project approach</h4>
               <p className="mt-2 text-sm text-muted-foreground">
-                Arduino sensor layer → Python data pipeline (Pandas/NumPy) → machine learning models (Random Forest, LSTM)
-                → route optimisation output for collection planning.
+                Arduino sensors and machine learning models (Random Forest, LSTM) for waste-level prediction.
+                Model predictions support waste collection route optimization and reduced manual monitoring.
               </p>
 
               <h4 className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">Key features</h4>
@@ -195,7 +195,7 @@ export default function Projects() {
           eyebrow="Projects"
           title={
             <>
-              Six builds, <span className="gradient-text">five deployed live</span>
+              Six technical projects, <span className="gradient-text">full stack & AI</span>
             </>
           }
           description="Each project below documents the problem, the approach and the technologies used."
