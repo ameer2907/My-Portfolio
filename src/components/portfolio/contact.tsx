@@ -119,9 +119,6 @@ export default function Contact() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-xs text-muted-foreground">
-                Languages: {profile.languages.join(" · ")}
-              </p>
             </div>
           </Reveal>
         </div>
