@@ -16,7 +16,7 @@ export default function Skills() {
               The stack I <span className="gradient-text">build with</span>
             </>
           }
-          description="Languages, frameworks, databases and tooling drawn directly from my coursework, internships and shipped projects."
+          description="Programming, frontend, backend, databases, data & AI, and tools."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

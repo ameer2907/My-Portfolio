@@ -198,7 +198,7 @@ export default function Projects() {
               Six technical projects, <span className="gradient-text">full stack & AI</span>
             </>
           }
-          description="Each project below documents the problem, the approach and the technologies used."
+          description="Project descriptions, features and technologies from my resume."
         />
 
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
