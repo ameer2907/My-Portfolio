@@ -362,12 +362,14 @@ export const projectFilters = [
   "Backend",
 ];
 
+const cgpa = 7.67;
+
 export const education = [
   {
     degree: "B.Tech – Computer Science Engineering (Data Science & Artificial Intelligence)",
     institution: "Dr. M.G.R Educational and Research Institute, Chennai",
     period: "2022 – 2026",
-    detail: "CGPA: 7.67",
+    detail: `CGPA: ${cgpa.toFixed(2)}`,
     coursework: [] as string[],
   },
 ];
@@ -387,7 +389,7 @@ export const certifications = [
 ];
 
 export const timeline = [
-  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: "Dr. M.G.R Educational and Research Institute, Chennai · CGPA: 7.67", type: "Education" },
+  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: `Dr. M.G.R Educational and Research Institute, Chennai · CGPA: ${cgpa.toFixed(2)}`, type: "Education" },
   { year: "Mar 2025 – Apr 2025", title: "Machine Learning Intern", org: "Thirumoolar IT Solutions · Remote", type: "Internship" },
   { year: "Jan 2026 – Apr 2026", title: "Python Full Stack Developer Intern", org: "Evolve Solution · Chennai, India · Onsite — 3 Months", type: "Internship" },
 ];
@@ -398,7 +400,7 @@ export const stats = [
   { label: "Internships", value: experiences.length, suffix: "" },
   { label: "Certifications", value: certifications.length, suffix: "" },
   { label: "Project Links", value: projects.filter(p => p.demo).length, suffix: "" },
-  { label: "CGPA", value: 7.67, suffix: "", decimals: 2 },
+  { label: "CGPA", value: cgpa, suffix: "", decimals: 2 },
 ];
 
 export const services = [
@@ -413,7 +415,7 @@ export const services = [
 ];
 
 export const whyHireMe = [
-  { title: "Engineering Graduate", desc: "B.Tech Computer Science Engineering (Data Science & AI), CGPA 7.67.", icon: "GraduationCap" },
+  { title: "Engineering Graduate", desc: `B.Tech Computer Science Engineering (Data Science & AI), CGPA ${cgpa.toFixed(2)}.`, icon: "GraduationCap" },
   { title: "Predictive Modelling", desc: "Supervised and unsupervised algorithms, including classification and regression.", icon: "Lightbulb" },
   { title: "Internship Experience", desc: "Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions.", icon: "Briefcase" },
   { title: "Project Experience", desc: "Six technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
