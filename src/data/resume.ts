@@ -389,9 +389,8 @@ export const certifications = [
 ];
 
 export const timeline = [
-  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: `Dr. M.G.R Educational and Research Institute, Chennai · CGPA: ${cgpa.toFixed(2)}`, type: "Education" },
-  { year: "Mar 2025 – Apr 2025", title: "Machine Learning Intern", org: "Thirumoolar IT Solutions · Remote", type: "Internship" },
-  { year: "Jan 2026 – Apr 2026", title: "Python Full Stack Developer Intern", org: "Evolve Solution · Chennai, India · Onsite — 3 Months", type: "Internship" },
+  { year: education[0]?.period ?? "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: `${education[0]?.institution ?? "Dr. M.G.R Educational and Research Institute, Chennai"} · CGPA: ${cgpa.toFixed(2)}`, type: "Education" },
+  ...experiences.slice().reverse().map((experience) => ({ year: experience.period, title: experience.role, org: `${experience.company} · ${experience.meta}`, type: "Internship" })),
 ];
 
 export const stats = [

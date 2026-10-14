@@ -11,7 +11,7 @@ const pillars = [
   {
     icon: Target,
     title: "Career objective",
-    body: "Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role.",
+    body: "Seeking entry-level Software Developer, Python Developer, Backend Developer or AI/ML opportunities.",
   },
   {
     icon: Cpu,
