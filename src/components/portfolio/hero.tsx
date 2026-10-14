@@ -12,7 +12,8 @@ const roles = [
   profile.role,
   "Seeking an Entry-Level Software Developer Role",
   "Seeking an Entry-Level Python Developer Role",
-  "Seeking an Entry-Level Full Stack Developer Role",
+  "Seeking an Entry-Level Backend Developer Role",
+  "Seeking an Entry-Level AI/ML Role",
 ];
 
 function Typing() {
