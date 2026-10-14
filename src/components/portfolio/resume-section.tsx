@@ -25,8 +25,8 @@ export default function ResumeSection() {
               </span>
               <h3 className="mt-4 text-xl font-semibold">K. Ameer Malik Bahad — Resume</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Full Stack Developer — Python & AI. Includes the professional summary, technical expertise,
-                internships, six projects, ten certifications and B.Tech education.
+                Software Engineer specializing in Python and AI. Includes the professional summary, technical expertise,
+                internships, six projects, eleven certifications and B.Tech education.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Button asChild className="rounded-full">
