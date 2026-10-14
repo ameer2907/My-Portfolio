@@ -53,6 +53,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Django" },
       { name: "Flask" },
       { name: "REST APIs" },
+      { name: "Node.js" },
+      { name: "Express.js" },
     ],
   },
   {
@@ -359,7 +361,7 @@ export const education = [
     degree: "B.Tech – Computer Science Engineering (Data Science & Artificial Intelligence)",
     institution: "Dr. M.G.R Educational and Research Institute, Chennai",
     period: "2022 – 2026",
-    detail: "CGPA: 7.58",
+    detail: "CGPA: 7.67",
     coursework: [] as string[],
   },
 ];
@@ -371,15 +373,16 @@ export const certifications = [
   "Deloitte Data Analytics Simulation",
   "Microsoft Azure Fundamentals",
   "NASSCOM Cybersecurity Fundamentals",
-  "Google Cloud Intro to Generative AI Studio",
+  "Google Cloud Introduction to Generative AI Studio",
+  "IBM Cloud Application Development",
   "Machine Learning (ThingBator Track)",
   "Power BI Workshop",
   "NPTEL Elite User-Centric Computing (HCI)",
 ];
 
 export const timeline = [
-  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: "Dr. M.G.R Educational and Research Institute, Chennai · CGPA: 7.58", type: "Education" },
-  { year: "Mar 2025 – Apr 2025", title: "Machine Learning Intern", org: "Thirumoolar IT Solutions · Chennai, India", type: "Internship" },
+  { year: "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: "Dr. M.G.R Educational and Research Institute, Chennai · CGPA: 7.67", type: "Education" },
+  { year: "Mar 2025 – Apr 2025", title: "Machine Learning Intern", org: "Thirumoolar IT Solutions · Remote", type: "Internship" },
   { year: "Jan 2026 – Apr 2026", title: "Python Full Stack Developer Intern", org: "Evolve Solution · Chennai, India · Onsite — 3 Months", type: "Internship" },
 ];
 
@@ -389,7 +392,7 @@ export const stats = [
   { label: "Internships", value: experiences.length, suffix: "" },
   { label: "Certifications", value: certifications.length, suffix: "" },
   { label: "Project Links", value: projects.filter(p => p.demo).length, suffix: "" },
-  { label: "CGPA", value: 7.58, suffix: "", decimals: 2 },
+  { label: "CGPA", value: 7.67, suffix: "", decimals: 2 },
 ];
 
 export const services = [
@@ -404,12 +407,12 @@ export const services = [
 ];
 
 export const whyHireMe = [
-  { title: "Engineering Graduate", desc: "B.Tech Computer Science Engineering (Data Science & AI), CGPA 7.58.", icon: "GraduationCap" },
+  { title: "Engineering Graduate", desc: "B.Tech Computer Science Engineering (Data Science & AI), CGPA 7.67.", icon: "GraduationCap" },
   { title: "Predictive Modelling", desc: "Supervised and unsupervised algorithms, including classification and regression.", icon: "Lightbulb" },
   { title: "Internship Experience", desc: "Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions.", icon: "Briefcase" },
   { title: "Project Experience", desc: "Six technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
   { title: "Reusable Components", desc: "React and TypeScript portfolio development with reusable components.", icon: "Sparkles" },
-  { title: "Technical Certifications", desc: "Ten certifications across data, cloud, security, machine learning and systems.", icon: "Rocket" },
+  { title: "Technical Certifications", desc: "Eleven certifications across data, cloud, security, machine learning and systems.", icon: "Rocket" },
   { title: "Onsite Experience", desc: "Three-month Python Full Stack Developer internship in Chennai.", icon: "Users" },
   { title: "Full Stack & AI", desc: "Python, Django, Flask, REST APIs, React.js, Pandas and NumPy.", icon: "Shuffle" },
 ];
