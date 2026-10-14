@@ -1,8 +1,8 @@
-import { Brain, Code2, Database, Layout, Server, Wrench } from "lucide-react";
+import { Brain, Cloud, Code2, Database, Layout, Server, Wrench } from "lucide-react";
 import { Reveal, SectionHeading } from "./primitives";
 import { marqueeTech, skillCategories } from "@/data/resume";
 
-const icons = { Code2, Layout, Server, Database, Brain, Wrench } as const;
+const icons = { Code2, Layout, Server, Database, Brain, Wrench, Cloud } as const;
 
 export default function Skills() {
   return (

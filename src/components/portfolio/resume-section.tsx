@@ -2,6 +2,7 @@ import { Download, ExternalLink, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal, SectionHeading } from "./primitives";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
+import { certifications, profile } from "@/data/resume";
 
 export default function ResumeSection() {
   return (
@@ -25,8 +26,8 @@ export default function ResumeSection() {
               </span>
               <h3 className="mt-4 text-xl font-semibold">K. Ameer Malik Bahad — Resume</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Full Stack Developer — Python & AI. Includes the professional summary, technical expertise,
-                internships, six projects, ten certifications and B.Tech education.
+                {profile.role}. Includes the professional summary, technical expertise, internships, six projects,
+                {` ${certifications.length} certifications`} and B.Tech education.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Button asChild className="rounded-full">

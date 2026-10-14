@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { profile } from "@/data/resume";
+import { education, profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import profPhotoAsset from "@/assets/prof-photo.png.asset.json";
 
@@ -12,7 +12,8 @@ const roles = [
   profile.role,
   "Seeking an Entry-Level Software Developer Role",
   "Seeking an Entry-Level Python Developer Role",
-  "Seeking an Entry-Level Full Stack Developer Role",
+  "Seeking an Entry-Level Backend Developer Role",
+  "Seeking an Entry-Level AI/ML Role",
 ];
 
 function Typing() {
@@ -172,7 +173,7 @@ export default function Hero() {
             <div className="flex items-center justify-between px-2 py-3">
               <div>
                 <p className="font-display text-sm font-semibold">B.Tech CSE — Data Science & AI</p>
-                <p className="text-xs text-muted-foreground">Graduated 2026 · CGPA 7.58</p>
+                <p className="text-xs text-muted-foreground">Graduated 2026 · {education[0]?.detail}</p>
               </div>
               <span className="rounded-full bg-primary/10 px-3 py-1 font-mono text-[11px] text-primary">Available</span>
             </div>

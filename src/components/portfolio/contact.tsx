@@ -47,7 +47,7 @@ export default function Contact() {
               Let's build <span className="gradient-text">something together</span>
             </>
           }
-          description="Available for entry-level Software Developer, Python Developer and Full Stack Developer roles."
+          description="Available for entry-level Software Developer, Python Developer, Backend Developer and AI/ML roles."
         />
 
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
