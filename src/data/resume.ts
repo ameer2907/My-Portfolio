@@ -9,9 +9,9 @@ import imgBusfolio from "@/assets/project-busfolio.jpg";
 export const profile = {
   name: "K. Ameer Malik Bahad",
   shortName: "Ameer Malik",
-  role: "Full Stack Developer — Python & AI",
-  tagline: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development.",
-  summary: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development. Proficient in Python, Django, Flask, REST APIs, SQL, and MongoDB, with experience building responsive web applications using JavaScript, HTML5, and CSS3. Seeking an entry-level Software Developer, Python Developer, or Full Stack Developer role.",
+  role: "Software Engineer | Python & AI",
+  tagline: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs.",
+  summary: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs. Proficient in Python, Django, Flask, SQL, MongoDB and JavaScript, with experience building and deploying web applications and AI-driven solutions. Seeking entry-level Software Developer, Python Developer, Backend Developer or AI/ML opportunities.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
@@ -71,6 +71,16 @@ export const skillCategories: SkillCategory[] = [
       { name: "Machine Learning" },
       { name: "Pandas" },
       { name: "NumPy" },
+      { name: "Scikit-learn" },
+    ],
+  },
+  {
+    title: "Cloud",
+    icon: "Cloud",
+    skills: [
+      { name: "Microsoft Azure" },
+      { name: "Google Cloud" },
+      { name: "IBM Cloud" },
     ],
   },
   {
@@ -123,8 +133,9 @@ export const experiences: Experience[] = [
     "meta": "Chennai, India · Onsite — 3 Months",
     "points": [
       "Built full-stack web applications using Python, Django, Flask, JavaScript, HTML5, and CSS3.",
-      "Implemented REST APIs and database operations using SQL and MongoDB, including authentication.",
-      "Tested and deployed web application modules with hands-on API integration experience."
+      "Developed REST APIs and implemented database operations using SQL and MongoDB.",
+      "Integrated authentication, API services and backend modules across application workflows.",
+      "Tested and deployed application modules, gaining hands-on experience in full-stack development."
     ],
     "tech": [
       "Python",
@@ -142,7 +153,7 @@ export const experiences: Experience[] = [
     "company": "Thirumoolar IT Solutions",
     "role": "Machine Learning Intern",
     "period": "Mar 2025 – Apr 2025",
-    "meta": "Chennai, India",
+    "meta": "Remote",
     "points": [
       "Built predictive models in Python and Pandas using supervised and unsupervised algorithms, including classification and regression."
     ],
