@@ -6,22 +6,22 @@ const pillars = [
   {
     icon: GraduationCap,
     title: "Who I am",
-    body: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python full-stack development.",
+    body: "B.Tech Computer Science and Engineering (Data Science & AI) graduate with internships in Python full-stack development and machine learning.",
   },
   {
     icon: Target,
     title: "Career objective",
-    body: "Seeking entry-level Software Developer, Python Developer, Backend Developer or AI/ML opportunities.",
+    body: "Seeking Software Engineer, Python, or Full-Stack Developer roles.",
   },
   {
     icon: Cpu,
     title: "Technologies",
-    body: "Python, Django, Flask and REST APIs on the backend; HTML5, CSS3, JavaScript and React.js on the frontend; MySQL and MongoDB for data, with Git and GitHub throughout.",
+    body: "Python, Django, Flask and REST APIs on the backend; React.js, JavaScript, TypeScript, HTML5 and CSS3 on the frontend; MySQL, MongoDB and Supabase for data, with Git and GitHub throughout.",
   },
   {
     icon: Puzzle,
     title: "Data & AI",
-    body: "Machine Learning, Pandas and NumPy, with internship experience building predictive models using supervised and unsupervised algorithms, including classification and regression.",
+    body: "Machine Learning, Pandas, NumPy and Scikit-learn, with internship experience in classification and regression tasks, plus AI projects using LLM APIs (Gemini AI, Claude AI).",
   },
 ];
 
