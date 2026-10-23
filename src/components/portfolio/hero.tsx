@@ -10,10 +10,9 @@ const profilePhoto = profPhotoAsset.url;
 
 const roles = [
   profile.role,
-  "Seeking an Entry-Level Software Developer Role",
+  "Seeking an Entry-Level Software Engineer Role",
   "Seeking an Entry-Level Python Developer Role",
-  "Seeking an Entry-Level Backend Developer Role",
-  "Seeking an Entry-Level AI/ML Role",
+  "Seeking an Entry-Level Full-Stack Developer Role",
 ];
 
 function Typing() {
@@ -78,7 +77,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1.5 text-xs text-muted-foreground"
           >
             <span className="h-2 w-2 rounded-full bg-primary" />
-            Open to entry-level Software Developer roles
+            Open to entry-level Software Engineer roles
           </motion.p>
 
           <motion.h1

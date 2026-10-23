@@ -129,8 +129,9 @@ export function FeaturedProject() {
 
               <h4 className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">Project approach</h4>
               <p className="mt-2 text-sm text-muted-foreground">
-                Arduino sensors and machine learning models (Random Forest, LSTM) for waste-level prediction.
-                Model predictions support waste collection route optimization and reduced manual monitoring.
+                A physical IoT-based prototype using a microcontroller and connected sensors to sort biodegradable and
+                non-biodegradable waste into separate compartments. AI-based waste classification controls the hardware
+                to automate sorting actions and demonstrate smart waste-management capabilities.
               </p>
 
               <h4 className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">Key features</h4>

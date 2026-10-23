@@ -1,17 +1,16 @@
-// Single source of truth: K. Ameer Malik Bahad — resume content.
+// Single source of truth: Ameer Malik Bahad — resume content.
 import imgWaste from "@/assets/project-waste-management.jpg";
-import imgCodelens from "@/assets/project-codelens.jpg";
-import imgSouthPlate from "@/assets/project-south-plate.jpg";
-import imgBank from "@/assets/project-bank.jpg";
-import imgWeather from "@/assets/project-weather.jpg";
-import imgBusfolio from "@/assets/project-busfolio.jpg";
+import codelensAsset from "@/assets/project-codelens.png.asset.json";
+import southPlateAsset from "@/assets/project-south-plate.png.asset.json";
+import nexusBankAsset from "@/assets/project-nexus-bank.png.asset.json";
+import weatherShieldAsset from "@/assets/project-weathershield.png.asset.json";
 
 export const profile = {
   name: "K. Ameer Malik Bahad",
   shortName: "Ameer Malik",
-  role: "Software Engineer | Python & AI",
-  tagline: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs.",
-  summary: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs. Proficient in Python, Django, Flask, SQL, MongoDB and JavaScript, with experience building and deploying web applications and AI-driven solutions. Seeking entry-level Software Developer, Python Developer, Backend Developer or AI/ML opportunities.",
+  role: "Software Engineer | Python & Full-Stack Development",
+  tagline: "Entry-level Software Engineer (B.Tech CSE – Data Science & AI) with internships in Python full-stack development and machine learning.",
+  summary: "Entry-level Software Engineer with a B.Tech in Computer Science and Engineering (Data Science & AI) and internships in Python full-stack development and machine learning. Built web applications and REST APIs with Python, Django, Flask, React, SQL, and MongoDB, plus AI projects using LLM APIs. Seeking Software Engineer, Python, or Full-Stack Developer roles.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
@@ -34,6 +33,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Python" },
       { name: "Java" },
       { name: "JavaScript" },
+      { name: "TypeScript" },
       { name: "SQL" },
     ],
   },
@@ -44,6 +44,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "HTML5" },
       { name: "CSS3" },
       { name: "React.js" },
+      { name: "Tailwind CSS" },
+      { name: "Vite" },
     ],
   },
   {
@@ -55,6 +57,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "REST APIs" },
       { name: "Node.js" },
       { name: "Express.js" },
+      { name: "JWT Authentication" },
     ],
   },
   {
@@ -63,7 +66,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "MySQL" },
       { name: "MongoDB" },
-      { name: "DBMS" },
+      { name: "Supabase" },
     ],
   },
   {
@@ -74,6 +77,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Pandas" },
       { name: "NumPy" },
       { name: "Scikit-learn" },
+      { name: "LLM APIs (Gemini AI, Claude AI)" },
+      { name: "Prompt Engineering" },
     ],
   },
   {
@@ -103,6 +108,9 @@ export const marqueeTech = [
   "Flask",
   "JavaScript",
   "React.js",
+  "TypeScript",
+  "Tailwind CSS",
+  "Vite",
   "HTML5",
   "CSS3",
   "REST APIs",
@@ -110,10 +118,13 @@ export const marqueeTech = [
   "Express.js",
   "MySQL",
   "MongoDB",
+  "Supabase",
   "Pandas",
   "NumPy",
   "Machine Learning",
   "Scikit-learn",
+  "LLM APIs (Gemini AI, Claude AI)",
+  "Prompt Engineering",
   "Microsoft Azure",
   "Google Cloud",
   "IBM Cloud",
@@ -163,7 +174,8 @@ export const experiences: Experience[] = [
     "period": "Mar 2025 – Apr 2025",
     "meta": "Remote",
     "points": [
-      "Built predictive models in Python and Pandas using supervised and unsupervised algorithms, including classification and regression."
+      "Assisted in developing and evaluating machine learning models using Python and Pandas for classification and regression tasks.",
+      "Supported data preprocessing, model analysis, and dashboard development using supervised and unsupervised learning techniques."
     ],
     "tech": [
       "Python",
@@ -199,16 +211,16 @@ export const projects: Project[] = [
   "category": "AI / IoT",
   "status": "Completed",
   "duration": "",
-  "description": "Built an IoT prototype using Arduino sensors and ML models (Random Forest, LSTM) for waste-level prediction.",
+  "description": "Developed a physical IoT-based waste segregation prototype using a microcontroller and connected sensors to sort biodegradable and non-biodegradable waste into separate compartments.",
   "features": [
-    "Used model predictions to optimize waste collection routes and reduce manual monitoring."
+    "Integrated AI-based waste classification with hardware control to automate sorting actions and demonstrate smart waste-management capabilities."
   ],
   "tech": [
     "Python",
     "Machine Learning",
     "IoT",
-    "Scikit-learn",
-    "LSTM"
+    "Arduino/ESP32",
+    "Sensors"
   ],
   "tags": [
     "Python",
@@ -244,7 +256,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://codelens-engine.netlify.app/"
 ,
-  image: imgCodelens
+  image: codelensAsset.url
 },
 {
   "slug": "south-plate",
@@ -269,7 +281,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://the-south-plate-food-delivery-app.netlify.app/"
 ,
-  image: imgSouthPlate
+  image: southPlateAsset.url
 },
 {
   "slug": "global-nexus-bank",
@@ -296,7 +308,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://global-nexus-bank.netlify.app/"
 ,
-  image: imgBank
+  image: nexusBankAsset.url
 },
 {
   "slug": "weather-shield",
@@ -323,32 +335,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://weathershield-india.netlify.app/"
 ,
-  image: imgWeather
-},
-{
-  "slug": "busfolio",
-  "name": "BusFolio",
-  "category": "Frontend / Interactive",
-  "status": "Live",
-  "duration": "",
-  "description": "Built a responsive portfolio website using React and TypeScript with reusable components.",
-  "features": [
-    "Implemented interactive bus-simulation screens with dark/light mode and Tailwind CSS styling."
-  ],
-  "tech": [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Vite"
-  ],
-  "tags": [
-    "Web Development",
-    "Frontend"
-  ],
-  "github": "https://github.com/ameer2907",
-  "demo": "https://busfolio.netlify.app/"
-,
-  image: imgBusfolio
+  image: weatherShieldAsset.url
 }
 ];
 
@@ -366,7 +353,7 @@ const cgpa = 7.67;
 
 export const education = [
   {
-    degree: "B.Tech – Computer Science Engineering (Data Science & Artificial Intelligence)",
+    degree: "B.Tech in Computer Science and Engineering – Data Science (Artificial Intelligence)",
     institution: "Dr. M.G.R Educational and Research Institute, Chennai",
     period: "2022 – 2026",
     detail: `CGPA: ${cgpa.toFixed(2)}`,
@@ -389,7 +376,7 @@ export const certifications = [
 ];
 
 export const timeline = [
-  { year: education[0]?.period ?? "2022 – 2026", title: "B.Tech in Computer Science Engineering (Data Science & Artificial Intelligence)", org: `${education[0]?.institution ?? "Dr. M.G.R Educational and Research Institute, Chennai"} · CGPA: ${cgpa.toFixed(2)}`, type: "Education" },
+  { year: education[0]?.period ?? "2022 – 2026", title: "B.Tech in Computer Science and Engineering – Data Science (Artificial Intelligence)", org: `${education[0]?.institution ?? "Dr. M.G.R Educational and Research Institute, Chennai"} · CGPA: ${cgpa.toFixed(2)}`, type: "Education" },
   ...experiences.slice().reverse().map((experience) => ({ year: experience.period, title: experience.role, org: `${experience.company} · ${experience.meta}`, type: "Internship" })),
 ];
 
@@ -417,7 +404,7 @@ export const whyHireMe = [
   { title: "Engineering Graduate", desc: `B.Tech Computer Science Engineering (Data Science & AI), CGPA ${cgpa.toFixed(2)}.`, icon: "GraduationCap" },
   { title: "Predictive Modelling", desc: "Supervised and unsupervised algorithms, including classification and regression.", icon: "Lightbulb" },
   { title: "Internship Experience", desc: "Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions.", icon: "Briefcase" },
-  { title: "Project Experience", desc: "Six technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
+  { title: "Project Experience", desc: "Five technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
   { title: "Reusable Components", desc: "React and TypeScript portfolio development with reusable components.", icon: "Sparkles" },
   { title: "Technical Certifications", desc: `${certifications.length} certifications across data, cloud, security, machine learning and systems.`, icon: "Rocket" },
   { title: "Onsite Experience", desc: "Three-month Python Full Stack Developer internship in Chennai.", icon: "Users" },
@@ -425,10 +412,10 @@ export const whyHireMe = [
 ];
 
 export const highlights = [
-  { label: "Technical projects", value: "AI Predictive Waste Management, CodeLens Engine, South Plate, Global Nexus Bank, Weather Shield India and BusFolio" },
+  { label: "Technical projects", value: "AI Predictive Waste Management, CodeLens Engine, South Plate, Global Nexus Bank and Weather Shield India" },
   { label: "Professional experience", value: "Evolve Solution & Thirumoolar IT Solutions" },
   { label: "Technical expertise", value: "Programming, frontend, backend, databases, data & AI, and tools" },
   { label: "Certifications", value: "Data Science & Analytics, Cloud & Security, Machine Learning & Systems" },
   { label: "Portfolio", value: profile.website },
-  { label: "Career objective", value: "Entry-level Software Developer, Python Developer or Full Stack Developer" },
+  { label: "Career objective", value: "Seeking Software Engineer, Python, or Full-Stack Developer roles" },
 ];
