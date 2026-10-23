@@ -1,17 +1,16 @@
-// Single source of truth: K. Ameer Malik Bahad — resume content.
+// Single source of truth: Ameer Malik Bahad — resume content.
 import imgWaste from "@/assets/project-waste-management.jpg";
-import imgCodelens from "@/assets/project-codelens.jpg";
-import imgSouthPlate from "@/assets/project-south-plate.jpg";
-import imgBank from "@/assets/project-bank.jpg";
-import imgWeather from "@/assets/project-weather.jpg";
-import imgBusfolio from "@/assets/project-busfolio.jpg";
+import codelensAsset from "@/assets/project-codelens.png.asset.json";
+import southPlateAsset from "@/assets/project-south-plate.png.asset.json";
+import nexusBankAsset from "@/assets/project-nexus-bank.png.asset.json";
+import weatherShieldAsset from "@/assets/project-weathershield.png.asset.json";
 
 export const profile = {
   name: "K. Ameer Malik Bahad",
   shortName: "Ameer Malik",
-  role: "Software Engineer | Python & AI",
-  tagline: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs.",
-  summary: "B.Tech Computer Science Engineering (Data Science & AI) graduate with hands-on internship and project experience in Python, full-stack development, machine learning and REST APIs. Proficient in Python, Django, Flask, SQL, MongoDB and JavaScript, with experience building and deploying web applications and AI-driven solutions. Seeking entry-level Software Developer, Python Developer, Backend Developer or AI/ML opportunities.",
+  role: "Software Engineer | Python & Full-Stack Development",
+  tagline: "Entry-level Software Engineer (B.Tech CSE – Data Science & AI) with internships in Python full-stack development and machine learning.",
+  summary: "Entry-level Software Engineer with a B.Tech in Computer Science and Engineering (Data Science & AI) and internships in Python full-stack development and machine learning. Built web applications and REST APIs with Python, Django, Flask, React, SQL, and MongoDB, plus AI projects using LLM APIs. Seeking Software Engineer, Python, or Full-Stack Developer roles.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
@@ -34,6 +33,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "Python" },
       { name: "Java" },
       { name: "JavaScript" },
+      { name: "TypeScript" },
       { name: "SQL" },
     ],
   },
@@ -44,6 +44,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "HTML5" },
       { name: "CSS3" },
       { name: "React.js" },
+      { name: "Tailwind CSS" },
+      { name: "Vite" },
     ],
   },
   {
@@ -55,6 +57,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "REST APIs" },
       { name: "Node.js" },
       { name: "Express.js" },
+      { name: "JWT Authentication" },
     ],
   },
   {
@@ -63,7 +66,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "MySQL" },
       { name: "MongoDB" },
-      { name: "DBMS" },
+      { name: "Supabase" },
     ],
   },
   {
@@ -74,6 +77,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Pandas" },
       { name: "NumPy" },
       { name: "Scikit-learn" },
+      { name: "LLM APIs (Gemini AI, Claude AI)" },
+      { name: "Prompt Engineering" },
     ],
   },
   {
