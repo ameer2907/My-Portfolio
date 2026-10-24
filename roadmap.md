@@ -1,7 +1,7 @@
 - [x] Match all portfolio facts to the latest uploaded resume; remove unsupported claims.
 - [x] Replace every resume download and preview with the latest PDF, including the user's follow-up request for all download buttons.
 - [x] Verify portfolio content, links, and rendering. All three download links and the preview reference the new asset; browser checks pass.
-- [ ] Check the newly uploaded resume and update the CGPA to 7.67 everywhere it appears; keep existing presentation unchanged.
+- [x] Check the newly uploaded resume and update the CGPA to 7.67 everywhere it appears; keep existing presentation unchanged.
 - [x] Sync portfolio to Ameer_Malik_Bahad_Resume-4.pdf (role, summary, skills, Thirumoolar bullets, waste project, resume download pointer).
-- [ ] Keep BusFolio in projects per user request (resume dropped it); use real live-demo screenshots for all project thumbnails.
-- [ ] Make the profile photo circular and re-theme the portfolio to light-blue tones (user request, replaces old accent colour).
+- [x] Keep BusFolio in projects per user request (resume dropped it); use real live-demo screenshots for all project thumbnails.
+- [x] Make the profile photo circular and re-theme the portfolio to light-blue tones (user request, replaces old accent colour).
