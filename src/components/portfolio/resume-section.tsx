@@ -26,7 +26,7 @@ export default function ResumeSection() {
               </span>
               <h3 className="mt-4 text-xl font-semibold">K. Ameer Malik Bahad — Resume</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {profile.role}. Includes the professional summary, technical expertise, internships, five projects,
+                {profile.role}. Includes the professional summary, technical expertise, internships, six projects,
                 {` ${certifications.length} certifications`} and B.Tech education.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">

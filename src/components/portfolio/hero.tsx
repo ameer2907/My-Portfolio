@@ -160,16 +160,16 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative mx-auto w-full max-w-sm"
         >
-          <div className="glass-card overflow-hidden p-3">
+          <div className="glass-card p-6 sm:p-8">
             <img
               src={profilePhoto}
               alt="Portrait of K. Ameer Malik Bahad"
               width={640}
-              height={800}
+              height={640}
               loading="eager"
-              className="aspect-[4/5] w-full rounded-xl object-cover"
+              className="mx-auto h-56 w-56 rounded-full shadow-glow sm:h-64 sm:w-64"
             />
-            <div className="flex items-center justify-between px-2 py-3">
+            <div className="mt-5 flex items-center justify-between px-2">
               <div>
                 <p className="font-display text-sm font-semibold">B.Tech CSE — Data Science & AI</p>
                 <p className="text-xs text-muted-foreground">Graduated 2026 · {education[0]?.detail}</p>
