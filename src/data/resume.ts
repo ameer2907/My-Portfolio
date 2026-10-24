@@ -1,9 +1,10 @@
-// Single source of truth: Ameer Malik Bahad — resume content.
+// Single source of truth: Ameer Malik Bahad — resume content (plus BusFolio, kept at the user's request).
 import imgWaste from "@/assets/project-waste-management.jpg";
 import codelensAsset from "@/assets/project-codelens.png.asset.json";
 import southPlateAsset from "@/assets/project-south-plate.png.asset.json";
 import nexusBankAsset from "@/assets/project-nexus-bank.png.asset.json";
 import weatherShieldAsset from "@/assets/project-weathershield.png.asset.json";
+import busfolioAsset from "@/assets/project-busfolio.png.asset.json";
 
 export const profile = {
   name: "K. Ameer Malik Bahad",
@@ -336,6 +337,31 @@ export const projects: Project[] = [
   "demo": "https://weathershield-india.netlify.app/"
 ,
   image: weatherShieldAsset.url
+},
+{
+  "slug": "busfolio",
+  "name": "BusFolio",
+  "category": "Frontend / Interactive",
+  "status": "Live",
+  "duration": "",
+  "description": "Built a responsive portfolio website using React and TypeScript with reusable components.",
+  "features": [
+    "Implemented interactive bus-simulation screens with dark/light mode and Tailwind CSS styling."
+  ],
+  "tech": [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  "tags": [
+    "Web Development",
+    "Frontend"
+  ],
+  "github": "https://github.com/ameer2907",
+  "demo": "https://busfolio.netlify.app/"
+,
+  image: busfolioAsset.url
 }
 ];
 
@@ -404,7 +430,7 @@ export const whyHireMe = [
   { title: "Engineering Graduate", desc: `B.Tech Computer Science Engineering (Data Science & AI), CGPA ${cgpa.toFixed(2)}.`, icon: "GraduationCap" },
   { title: "Predictive Modelling", desc: "Supervised and unsupervised algorithms, including classification and regression.", icon: "Lightbulb" },
   { title: "Internship Experience", desc: "Python full-stack development at Evolve Solution and machine learning at Thirumoolar IT Solutions.", icon: "Briefcase" },
-  { title: "Project Experience", desc: "Five technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
+  { title: "Project Experience", desc: "Six technical projects spanning AI, IoT and web applications.", icon: "FolderGit2" },
   { title: "Reusable Components", desc: "React and TypeScript portfolio development with reusable components.", icon: "Sparkles" },
   { title: "Technical Certifications", desc: `${certifications.length} certifications across data, cloud, security, machine learning and systems.`, icon: "Rocket" },
   { title: "Onsite Experience", desc: "Three-month Python Full Stack Developer internship in Chennai.", icon: "Users" },
@@ -412,7 +438,7 @@ export const whyHireMe = [
 ];
 
 export const highlights = [
-  { label: "Technical projects", value: "AI Predictive Waste Management, CodeLens Engine, South Plate, Global Nexus Bank and Weather Shield India" },
+  { label: "Technical projects", value: "AI Predictive Waste Management, CodeLens Engine, South Plate, Global Nexus Bank, Weather Shield India and BusFolio" },
   { label: "Professional experience", value: "Evolve Solution & Thirumoolar IT Solutions" },
   { label: "Technical expertise", value: "Programming, frontend, backend, databases, data & AI, and tools" },
   { label: "Certifications", value: "Data Science & Analytics, Cloud & Security, Machine Learning & Systems" },
