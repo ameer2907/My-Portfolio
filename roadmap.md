@@ -2,3 +2,5 @@
 - [x] Replace every resume download and preview with the latest PDF, including the user's follow-up request for all download buttons.
 - [x] Verify portfolio content, links, and rendering. All three download links and the preview reference the new asset; browser checks pass.
 - [ ] Check the newly uploaded resume and update the CGPA to 7.67 everywhere it appears; keep existing presentation unchanged.
+- [x] Sync portfolio to Ameer_Malik_Bahad_Resume-4.pdf (role, summary, skills, Thirumoolar bullets, waste project, resume download pointer).
+- [ ] Keep BusFolio in projects per user request (resume dropped it); use real live-demo screenshots for all project thumbnails.
