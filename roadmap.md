@@ -4,3 +4,4 @@
 - [ ] Check the newly uploaded resume and update the CGPA to 7.67 everywhere it appears; keep existing presentation unchanged.
 - [x] Sync portfolio to Ameer_Malik_Bahad_Resume-4.pdf (role, summary, skills, Thirumoolar bullets, waste project, resume download pointer).
 - [ ] Keep BusFolio in projects per user request (resume dropped it); use real live-demo screenshots for all project thumbnails.
+- [ ] Make the profile photo circular and re-theme the portfolio to light-blue tones (user request, replaces old accent colour).
