@@ -55,7 +55,7 @@ function Typing() {
 }
 
 const nameLines = [
-  { words: ["Ameer"], gradient: false },
+  { words: ["I'm", "Ameer"], gradient: false },
   { words: ["Malik", "Bahad"], gradient: true },
 ];
 
@@ -64,11 +64,13 @@ function AnimatedName() {
   let order = 0;
 
   return (
-    <h1 className="mt-6 text-3xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
+    <h1 className="mt-3 text-3xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
       {nameLines.map((line, li) => (
         <span key={li} className="block">
           {line.words.map((word) => {
             const delay = 0.06 + order++ * 0.1;
+            const isPrefix = word === "I'm";
+            const cls = `${line.gradient ? "name-shine" : ""}${isPrefix ? " text-muted-foreground" : ""}`.trim();
             return reduce ? (
               <span key={word} className={line.gradient ? "gradient-text" : undefined}>
                 {word}&nbsp;
@@ -79,7 +81,7 @@ function AnimatedName() {
                 initial={{ opacity: 0, y: 28, filter: "blur(8px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
-                className={line.gradient ? "inline-block name-shine" : "inline-block"}
+                className={`inline-block ${cls}`}
               >
                 {word}&nbsp;
               </motion.span>
@@ -117,6 +119,14 @@ export default function Hero() {
             Open to entry-level Software Engineer roles
           </motion.p>
 
+          <motion.p
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="font-display text-xl font-medium text-muted-foreground sm:text-2xl"
+          >
+            Hi,
+          </motion.p>
           <AnimatedName />
 
           <motion.p
