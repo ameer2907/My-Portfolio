@@ -4,7 +4,7 @@ import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from
 import { Button } from "@/components/ui/button";
 import { education, profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
-import profPhotoAsset from "@/assets/prof-photo.png.asset.json";
+import profPhotoAsset from "@/assets/prof-photo-2.png.asset.json";
 
 const profilePhoto = profPhotoAsset.url;
 
