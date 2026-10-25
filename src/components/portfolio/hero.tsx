@@ -55,7 +55,7 @@ function Typing() {
 }
 
 const nameLines = [
-  { words: ["K.", "Ameer"], gradient: false },
+  { words: ["Ameer"], gradient: false },
   { words: ["Malik", "Bahad"], gradient: true },
 ];
 
@@ -64,7 +64,7 @@ function AnimatedName() {
   let order = 0;
 
   return (
-    <h1 className="mt-6 text-4xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">
+    <h1 className="mt-6 text-3xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
       {nameLines.map((line, li) => (
         <span key={li} className="block">
           {line.words.map((word) => {
