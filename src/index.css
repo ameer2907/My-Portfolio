@@ -79,20 +79,20 @@
     --popover: 212 35% 9%;
     --popover-foreground: 200 25% 94%;
 
-    --primary: 199 95% 62%;
-    --primary-dark: 199 85% 44%;
+    --primary: 199 78% 68%;
+    --primary-dark: 199 68% 52%;
     --primary-light: 199 60% 20%;
     --primary-foreground: 212 50% 8%;
-    --primary-glow: 197 100% 72%;
+    --primary-glow: 197 82% 78%;
 
     --secondary: 210 22% 16%;
     --secondary-light: 210 22% 22%;
     --secondary-foreground: 200 25% 94%;
 
-    --accent: 199 95% 66%;
+    --accent: 199 78% 72%;
     --accent-light: 199 50% 18%;
     --accent-foreground: 212 50% 8%;
-    --accent-glow: 197 100% 75%;
+    --accent-glow: 197 82% 80%;
 
     --muted: 210 22% 14%;
     --muted-foreground: 200 14% 66%;
@@ -102,20 +102,20 @@
 
     --border: 210 20% 20%;
     --input: 210 20% 18%;
-    --ring: 199 95% 62%;
+    --ring: 199 78% 68%;
 
     --surface-glass: 212 30% 12% / 0.55;
     --surface-glass-border: 200 30% 60% / 0.14;
 
     --gradient-surface: linear-gradient(160deg, hsl(212 30% 14% / 0.8), hsl(212 40% 8% / 0.6));
-    --gradient-aurora: radial-gradient(60% 50% at 15% 10%, hsl(199 95% 55% / 0.18) 0%, transparent 65%),
-      radial-gradient(50% 45% at 85% 20%, hsl(197 100% 65% / 0.15) 0%, transparent 60%),
-      radial-gradient(55% 50% at 50% 95%, hsl(195 90% 60% / 0.16) 0%, transparent 65%);
+    --gradient-aurora: radial-gradient(60% 50% at 15% 10%, hsl(199 80% 58% / 0.14) 0%, transparent 65%),
+      radial-gradient(50% 45% at 85% 20%, hsl(197 85% 68% / 0.12) 0%, transparent 60%),
+      radial-gradient(55% 50% at 50% 95%, hsl(195 80% 62% / 0.13) 0%, transparent 65%);
 
     --shadow-soft: 0 1px 2px hsl(0 0% 0% / 0.4), 0 8px 24px -12px hsl(0 0% 0% / 0.6);
     --shadow-medium: 0 2px 6px hsl(0 0% 0% / 0.4), 0 18px 40px -18px hsl(0 0% 0% / 0.7);
     --shadow-large: 0 32px 70px -30px hsl(0 0% 0% / 0.85);
-    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.2), 0 20px 50px -24px hsl(var(--primary) / 0.5);
+    --shadow-glow: 0 0 0 1px hsl(var(--primary) / 0.15), 0 20px 50px -24px hsl(var(--primary) / 0.35);
 
     --sidebar-background: 212 40% 8%;
     --sidebar-foreground: 200 25% 94%;
