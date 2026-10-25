@@ -117,16 +117,7 @@ export default function Hero() {
             Open to entry-level Software Engineer roles
           </motion.p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.05 }}
-            className="mt-6 text-4xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl"
-          >
-            K. Ameer
-            <br />
-            <span className="gradient-text">Malik Bahad</span>
-          </motion.h1>
+          <AnimatedName />
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
