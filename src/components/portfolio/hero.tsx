@@ -54,6 +54,43 @@ function Typing() {
   );
 }
 
+const nameLines = [
+  { words: ["K.", "Ameer"], gradient: false },
+  { words: ["Malik", "Bahad"], gradient: true },
+];
+
+function AnimatedName() {
+  const reduce = useReducedMotion();
+  let order = 0;
+
+  return (
+    <h1 className="mt-6 text-4xl font-semibold leading-[1.05] sm:text-6xl lg:text-7xl">
+      {nameLines.map((line, li) => (
+        <span key={li} className="block">
+          {line.words.map((word) => {
+            const delay = 0.06 + order++ * 0.1;
+            return reduce ? (
+              <span key={word} className={line.gradient ? "gradient-text" : undefined}>
+                {word}&nbsp;
+              </span>
+            ) : (
+              <motion.span
+                key={word}
+                initial={{ opacity: 0, y: 28, filter: "blur(8px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+                className={line.gradient ? "inline-block name-shine" : "inline-block"}
+              >
+                {word}&nbsp;
+              </motion.span>
+            );
+          })}
+        </span>
+      ))}
+    </h1>
+  );
+}
+
 
 export default function Hero() {
   const socials = [
