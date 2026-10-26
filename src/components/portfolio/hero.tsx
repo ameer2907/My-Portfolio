@@ -4,7 +4,7 @@ import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from
 import { Button } from "@/components/ui/button";
 import { education, profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
-import profPhotoAsset from "@/assets/prof-photo-2.png.asset.json";
+import profPhotoAsset from "@/assets/prof-photo-3.png.asset.json";
 
 const profilePhoto = profPhotoAsset.url;
 
@@ -205,7 +205,7 @@ export default function Hero() {
               width={640}
               height={640}
               loading="eager"
-              className="mx-auto h-56 w-56 rounded-full shadow-glow sm:h-64 sm:w-64"
+              className="mx-auto h-56 w-56 rounded-full ring-4 ring-primary shadow-glow sm:h-64 sm:w-64"
             />
             <div className="mt-5 flex items-center justify-between px-2">
               <div>
