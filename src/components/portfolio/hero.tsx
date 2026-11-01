@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from "lucide-react";
+import { downloadFile } from "@/lib/download";
 import { Button } from "@/components/ui/button";
 import { education, profile } from "@/data/resume";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
@@ -153,10 +154,12 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.24 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            <Button asChild size="lg" className="rounded-full shadow-glow">
-              <a href={resumeAsset.url} download="K-Ameer-Malik-Bahad-Resume.pdf">
-                <Download className="h-4 w-4" /> Download Resume
-              </a>
+            <Button
+              size="lg"
+              className="rounded-full shadow-glow"
+              onClick={() => downloadFile(resumeAsset.url, "K-Ameer-Malik-Bahad-Resume.pdf")}
+            >
+              <Download className="h-4 w-4" /> Download Resume
             </Button>
             <Button asChild size="lg" variant="outline" className="rounded-full">
               <a href="#projects">View Projects</a>

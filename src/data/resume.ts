@@ -11,7 +11,7 @@ export const profile = {
   shortName: "Ameer Malik",
   role: "Software Engineer | Python & Full-Stack Development",
   tagline: "Entry-level Software Engineer (B.Tech CSE – Data Science & AI) with internships in Python full-stack development and machine learning.",
-  summary: "Entry-level Software Engineer with a B.Tech in Computer Science and Engineering (Data Science & AI) and internships in Python full-stack development and machine learning. Built web applications and REST APIs with Python, Django, Flask, React, SQL, and MongoDB, plus AI projects using LLM APIs. Seeking Software Engineer, Python, or Full-Stack Developer roles.",
+  summary: "Bachelor of Technology graduate (2026) in Computer Science and Engineering, specializing in Data Science and Artificial Intelligence, with internships in Python full-stack development and machine learning. Builds web applications and REST APIs with Python, Django, Flask, React, SQL, and MongoDB, and integrates LLM APIs into AI-powered projects. Seeking entry-level Software Engineer, Python Developer, Backend Developer, or Full-Stack Developer roles.",
   location: "Chennai, Tamil Nadu, India",
   email: "ameermalikbahad07@gmail.com",
   phone: "+91 9087223978",
@@ -155,7 +155,7 @@ export const experiences: Experience[] = [
       "Built full-stack web applications using Python, Django, Flask, JavaScript, HTML5, and CSS3.",
       "Developed REST APIs and implemented database operations using SQL and MongoDB.",
       "Integrated authentication, API services and backend modules across application workflows.",
-      "Tested and deployed application modules, gaining hands-on experience in full-stack development."
+      "Tested, debugged and deployed application modules, gaining hands-on full-stack development experience."
     ],
     "tech": [
       "Python",
@@ -175,8 +175,9 @@ export const experiences: Experience[] = [
     "period": "Mar 2025 – Apr 2025",
     "meta": "Remote",
     "points": [
-      "Assisted in developing and evaluating machine learning models using Python and Pandas for classification and regression tasks.",
-      "Supported data preprocessing, model analysis, and dashboard development using supervised and unsupervised learning techniques."
+      "Assisted in developing and evaluating machine learning models for classification and regression tasks.",
+      "Used Python and Pandas to support data preprocessing and model analysis.",
+      "Applied supervised and unsupervised learning techniques while supporting dashboard development."
     ],
     "tech": [
       "Python",
