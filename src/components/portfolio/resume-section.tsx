@@ -2,6 +2,7 @@ import { Download, ExternalLink, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal, SectionHeading } from "./primitives";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
+import { downloadFile } from "@/lib/download";
 import { certifications, profile } from "@/data/resume";
 
 export default function ResumeSection() {
@@ -30,10 +31,11 @@ export default function ResumeSection() {
                 {` ${certifications.length} certifications`} and B.Tech education.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Button asChild className="rounded-full">
-                  <a href={resumeAsset.url} download="K-Ameer-Malik-Bahad-Resume.pdf">
-                    <Download className="h-4 w-4" /> Download PDF
-                  </a>
+                <Button
+                  className="rounded-full"
+                  onClick={() => downloadFile(resumeAsset.url, "K-Ameer-Malik-Bahad-Resume.pdf")}
+                >
+                  <Download className="h-4 w-4" /> Download PDF
                 </Button>
                 <Button asChild variant="outline" className="rounded-full">
                   <a href={resumeAsset.url} target="_blank" rel="noopener noreferrer">
