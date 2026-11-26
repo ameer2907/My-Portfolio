@@ -4,10 +4,7 @@ import { ArrowDown, Download, Github, Globe, Linkedin, Mail, MapPin, Send } from
 import { downloadFile } from "@/lib/download";
 import { Button } from "@/components/ui/button";
 import { education, profile } from "@/data/resume";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
-import profPhotoAsset from "@/assets/prof-photo-3.png.asset.json";
-
-const profilePhoto = profPhotoAsset.url;
+import { profilePhotoUrl, resumeFileName, resumeUrl } from "@/lib/media";
 
 const roles = [
   profile.role,
@@ -157,7 +154,7 @@ export default function Hero() {
             <Button
               size="lg"
               className="rounded-full shadow-glow"
-              onClick={() => downloadFile(resumeAsset.url, "K-Ameer-Malik-Bahad-Resume.pdf")}
+              onClick={() => downloadFile(resumeUrl, resumeFileName)}
             >
               <Download className="h-4 w-4" /> Download Resume
             </Button>
@@ -203,12 +200,13 @@ export default function Hero() {
         >
           <div className="glass-card p-6 sm:p-8">
             <img
-              src={profilePhoto}
+              src={profilePhotoUrl}
               alt="Portrait of K. Ameer Malik Bahad"
               width={640}
               height={640}
               loading="eager"
-              className="mx-auto h-56 w-56 rounded-full ring-4 ring-primary shadow-glow sm:h-64 sm:w-64"
+              decoding="async"
+              className="mx-auto aspect-square h-56 w-56 rounded-full object-cover object-top ring-4 ring-primary shadow-glow sm:h-64 sm:w-64"
             />
             <div className="mt-5 flex items-center justify-between px-2">
               <div>

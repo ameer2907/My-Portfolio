@@ -1,2 +1,4 @@
 - Keep factual portfolio content centralized in `src/data/resume.ts` and derive repeated summaries from it to prevent inconsistent resume updates.
-- Use the shared resume asset pointer for all PDF downloads and previews so replacing the document updates every entry point.- Trigger resume downloads through `downloadFile` in `src/lib/download.ts` (fetch to blob) because the `download` attribute alone just opens the PDF in a new tab on some hosts.
+- Import the resume and profile photo only through `src/lib/media.ts` so replacing a file updates every entry point.
+- Bundle site media (photo, project thumbnails, resume) as real files under `src/assets`, not `/__l5e` CDN pointers, because the portfolio is also hosted on Netlify where those paths 404.
+- Project thumbnails must be genuine screenshots of the live app; leave `image` unset (title tile) when none exists.- Trigger resume downloads through `downloadFile` in `src/lib/download.ts` (fetch to blob) because the `download` attribute alone just opens the PDF in a new tab on some hosts.

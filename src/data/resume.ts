@@ -1,10 +1,10 @@
 // Single source of truth: Ameer Malik Bahad — resume content (plus BusFolio, kept at the user's request).
-import imgWaste from "@/assets/project-waste-management.jpg";
-import codelensAsset from "@/assets/project-codelens.png.asset.json";
-import southPlateAsset from "@/assets/project-south-plate.png.asset.json";
-import nexusBankAsset from "@/assets/project-nexus-bank.png.asset.json";
-import weatherShieldAsset from "@/assets/project-weathershield.png.asset.json";
-import busfolioAsset from "@/assets/project-busfolio.png.asset.json";
+// Thumbnails are real screenshots of each live app, bundled so they load on every host.
+import codelensShot from "@/assets/projects/codelens.webp";
+import southPlateShot from "@/assets/projects/south-plate.webp";
+import nexusBankShot from "@/assets/projects/nexus-bank.webp";
+import weatherShieldShot from "@/assets/projects/weathershield.webp";
+import busfolioShot from "@/assets/projects/busfolio.webp";
 
 export const profile = {
   name: "K. Ameer Malik Bahad",
@@ -203,7 +203,8 @@ export type Project = {
   demo?: string;
   github: string;
   featured?: boolean;
-  image: string;
+  /** Real screenshot/photo only; omitted until a genuine one exists. */
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -231,8 +232,6 @@ export const projects: Project[] = [
   ],
   "github": "https://github.com/ameer2907",
   "featured": true
-,
-  image: imgWaste
 },
 {
   "slug": "codelens-engine",
@@ -258,7 +257,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://codelens-engine.netlify.app/"
 ,
-  image: codelensAsset.url
+  image: codelensShot
 },
 {
   "slug": "south-plate",
@@ -283,7 +282,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://the-south-plate-food-delivery-app.netlify.app/"
 ,
-  image: southPlateAsset.url
+  image: southPlateShot
 },
 {
   "slug": "global-nexus-bank",
@@ -310,7 +309,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://global-nexus-bank.netlify.app/"
 ,
-  image: nexusBankAsset.url
+  image: nexusBankShot
 },
 {
   "slug": "weather-shield",
@@ -337,7 +336,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://weathershield-india.netlify.app/"
 ,
-  image: weatherShieldAsset.url
+  image: weatherShieldShot
 },
 {
   "slug": "busfolio",
@@ -362,7 +361,7 @@ export const projects: Project[] = [
   "github": "https://github.com/ameer2907",
   "demo": "https://busfolio.netlify.app/"
 ,
-  image: busfolioAsset.url
+  image: busfolioShot
 }
 ];
 

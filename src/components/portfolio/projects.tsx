@@ -1,11 +1,24 @@
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ExternalLink, Github, Search, Star } from "lucide-react";
+import { Cpu, ExternalLink, Github, Search, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Reveal, SectionHeading, Tag } from "./primitives";
 import { projectFilters, projects, type Project } from "@/data/resume";
 import { cn } from "@/lib/utils";
+
+// Shown only when no genuine screenshot or photo exists — never a stand-in image.
+function NoScreenshot({ name }: { name: string }) {
+  return (
+    <div className="absolute inset-0 grid place-items-center bg-secondary/60 p-6 text-center">
+      <div>
+        <Cpu className="mx-auto h-8 w-8 text-primary" aria-hidden="true" />
+        <p className="mt-3 font-display text-sm font-semibold text-foreground">{name}</p>
+        <p className="mt-1 text-xs text-muted-foreground">Hardware prototype</p>
+      </div>
+    </div>
+  );
+}
 
 function ProjectCard({ p }: { p: Project }) {
   return (
@@ -18,14 +31,19 @@ function ProjectCard({ p }: { p: Project }) {
       className="glass-card group flex h-full flex-col overflow-hidden hover:-translate-y-1"
     >
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-accent/10">
-        <img
-          src={p.image}
-          alt={`${p.name} preview`}
-          width={1280}
-          height={720}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        {p.image ? (
+          <img
+            src={p.image}
+            alt={`Screenshot of ${p.name}`}
+            width={1280}
+            height={720}
+            loading="lazy"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <NoScreenshot name={p.name} />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
         <span className="absolute left-3 top-3 rounded-full bg-background/80 px-2.5 py-1 font-mono text-[11px] text-muted-foreground backdrop-blur">
           {p.category}
@@ -110,14 +128,21 @@ export function FeaturedProject() {
         <Reveal>
           <article className="glass-card grid gap-8 p-6 sm:p-9 lg:grid-cols-[1.1fr_1fr]">
             <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-accent/10">
-              <img
-                src={p.image}
-                alt={`${p.name} preview`}
-                width={1280}
-                height={720}
-                loading="lazy"
-                className="aspect-[4/3] h-full w-full object-cover"
-              />
+              {p.image ? (
+                <img
+                  src={p.image}
+                  alt={`Screenshot of ${p.name}`}
+                  width={1280}
+                  height={720}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/3] h-full w-full object-cover object-top"
+                />
+              ) : (
+                <div className="relative aspect-[4/3] h-full w-full">
+                  <NoScreenshot name={p.name} />
+                </div>
+              )}
             </div>
 
             <div>

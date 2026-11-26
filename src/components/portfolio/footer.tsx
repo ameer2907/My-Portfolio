@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowUp, Download, Github, Globe, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { marqueeTech, profile } from "@/data/resume";
-import resumeAsset from "@/assets/resume.pdf.asset.json";
+import { resumeFileName, resumeUrl } from "@/lib/media";
 import { downloadFile } from "@/lib/download";
 
 const quickLinks = [
@@ -100,7 +100,7 @@ export default function Footer() {
           <Button
             size="sm"
             className="mt-4 rounded-full"
-            onClick={() => downloadFile(resumeAsset.url, "K-Ameer-Malik-Bahad-Resume.pdf")}
+            onClick={() => downloadFile(resumeUrl, resumeFileName)}
           >
             <Download className="h-4 w-4" /> Download Resume
           </Button>
