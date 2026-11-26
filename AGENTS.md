@@ -1,2 +1,2 @@
 - Keep factual portfolio content centralized in `src/data/resume.ts` and derive repeated summaries from it to prevent inconsistent resume updates.
-- Use the shared resume asset pointer for all PDF downloads and previews so replacing the document updates every entry point.
+- Use the shared resume asset pointer for all PDF downloads and previews so replacing the document updates every entry point.- Trigger resume downloads through `downloadFile` in `src/lib/download.ts` (fetch to blob) because the `download` attribute alone just opens the PDF in a new tab on some hosts.
